@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.d2cec782.css",
+    "main.js": "/Portfolio/static/js/main.d72b37eb.js",
+    "static/media/portfolio-bg.webp": "/Portfolio/static/media/portfolio-bg.ecfd0a95d5401926635c.webp",
+    "static/media/blog-bg.webp": "/Portfolio/static/media/blog-bg.d785df1cc1927ffef101.webp",
+    "static/media/footer_dark.webp": "/Portfolio/static/media/footer_dark.0fb02f11f1adb0430981.webp",
+    "static/media/Poppins-Regular.ttf": "/Portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/Portfolio/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-Bold.ttf": "/Portfolio/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/Portfolio/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
+    "static/media/Poppins-Black.ttf": "/Portfolio/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/Profil_pic_BG.webp": "/Portfolio/static/media/Profil_pic_BG.b0a4fb89115715e3b252.webp",
+    "static/media/ProtestRiot-Regular.ttf": "/Portfolio/static/media/ProtestRiot-Regular.8de441de7974346171db.ttf",
+    "static/media/qoute_section-bg.webp": "/Portfolio/static/media/qoute_section-bg.5c6cf2be8f0671ae4039.webp",
+    "static/media/BG-gray.webp": "/Portfolio/static/media/BG-gray.32b36c6f024aa62ff79a.webp",
+    "index.html": "/Portfolio/index.html",
+    "static/media/Logo_Thomas_main_color.svg": "/Portfolio/static/media/Logo_Thomas_main_color.326771837681ee21aad68be336558abd.svg",
+    "static/media/wave-reverse-yellow.svg": "/Portfolio/static/media/wave-reverse-yellow.a55a1e8109511861426a78e4ea0ec39d.svg",
+    "static/media/wave-yellow.svg": "/Portfolio/static/media/wave-yellow.478332cae3c5cd9f212a3a5e1afbe30d.svg",
+    "static/media/wave.svg": "/Portfolio/static/media/wave.470cd8feb8ecd71c5c8a6c9486fdd459.svg",
+    "main.d2cec782.css.map": "/Portfolio/static/css/main.d2cec782.css.map",
+    "main.d72b37eb.js.map": "/Portfolio/static/js/main.d72b37eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2cec782.css",
+    "static/js/main.d72b37eb.js"
+  ]
+}
