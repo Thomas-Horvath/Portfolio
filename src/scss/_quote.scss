@@ -1,0 +1,58 @@
+//*  =========================== qoute section ============================================*/
+
+.quote {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem;
+    min-height: 600px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../assets/img/qoute_section-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+z-index: -1;
+    margin-top: -20rem;
+
+
+    p {
+        font-size: 1.1rem;
+        margin: .4rem;
+
+    }
+
+    p:first-child {
+        font-family: $font-family-protest;
+        letter-spacing: 2px;
+        line-height: 1.4rem;
+    }
+
+    p:last-child {
+        color: $main-color;
+        font-family: $font-family-poppins-bold;
+    }
+}
+
+.quote-container {
+    background: $bg-card;
+    width: 80%;
+    height: 200px;
+    z-index: 1;
+    position: absolute;
+   bottom: -3rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0 0 0 1rem;
+    border: 1px solid $main-color-55;
+    border-radius: .25rem;
+    box-shadow: 4px 4px 10px $black;
+    z-index: 1;
+}

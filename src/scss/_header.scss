@@ -1,0 +1,180 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 80px;
+    padding: 0 calc(2rem - 12px) 0 2rem;
+    background: $bg-header-dark ;
+    height: 70px;
+    border-bottom: 1px solid #f5b32f8c;
+    transition: all 0.3s ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1400px;
+    min-width: 220px;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-logo-img {
+    height: 45px;
+    width: 45px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    height: 100%;
+
+    i {
+        font-size: 1.5rem;
+        transition: font-size .2s ease, color .3s ease;
+    }
+
+    img {
+        width: 40px;
+        display: block;
+        align-self: center;
+        transition: transform .2s ease, color .3s ease;
+    }
+
+    .icon-container:hover {
+
+        i {
+            font-size: 1.8rem;
+            color: $main-color;
+        }
+
+        img {
+            transform: scale(1.2);
+            color: $main-color;
+
+        }
+    }
+}
+
+.icon-container {
+    width: 3rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.navbar {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background-color: $bg-dark;
+    padding: 1rem 2rem 2rem;
+    overflow-y: auto;
+    z-index: 1;
+    top: -110%;
+    visibility: hidden;
+    // border-bottom: 1px solid $main-color-55;
+    transition: top .4s ease, visibility .4s ease;
+}
+
+
+
+.hamburger-btn-close {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform .3s ease, color .3s ease;
+}
+
+.hamburger-btn-close:hover {
+    color: $main-color;
+    transform: scale(1.2);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: $text-color-light;
+    line-height: 1.5;
+    display: block;
+    padding: 1rem 0;
+    transition: color 0.5s ease;
+}
+
+.nav-link:hover {
+    color: $main-color;
+
+}
+
+.nav-link.active {
+    color: $main-color;
+
+}
+
+
+.nav-links {
+    li {
+        width: 100%;
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid $small-menu-border;
+    }
+}
+
+.nav-links {
+    li:first-child {
+        border-top: 1px solid $small-menu-border;
+        margin-top: 1rem;
+    }
+}
+
+.open {
+    top: 0;
+    visibility: visible;
+}
+
+
+
+/* Görgetéskor alkalmazott stílusok */
+.header.scrolled {
+    background: $bg-header-dark ;
+    /* Átlátszó fekete háttér */
+    height: 70px;
+    /* Csökkentett magasság */
+    border-bottom: 1px solid #f5b32f8c;
+}
+
+/* Logó stílusok */
+.nav-logo-img {
+    transition: all 0.3s ease;
+}
+
+.header.scrolled .nav-logo-img {
+    width: 45px;
+    /* Csökkentett logó méret */
+    height: 45px;
+    /* Csökkentett logó méret */
+}
