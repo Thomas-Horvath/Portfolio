@@ -39,16 +39,15 @@
 
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    color: $btn-color-dark;
-    text-shadow: 3px 0px 1px $main-color;
-}
+
+
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
+    color: $main-color;
     font-size: 3rem;
     font-weight: 600;
+
 
 }
 

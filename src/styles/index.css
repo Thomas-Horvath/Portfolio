@@ -49,7 +49,6 @@ body {
   background-color: #191919;
   color: #ddd;
   min-width: 330px;
-  height: 300vh;
 }
 
 li {
@@ -990,14 +989,9 @@ section {
   padding: 0 1rem;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: #111111;
-  text-shadow: 3px 0px 1px #cbaa5c;
-}
-
 .swiper-button-prev::after,
 .swiper-button-next::after {
+  color: #cbaa5c;
   font-size: 3rem;
   font-weight: 600;
 }

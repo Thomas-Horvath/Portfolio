@@ -27,17 +27,17 @@
         "cvButton": "Download my CV!"
     },
     "aboutInfo": {
-        "title": "Some more info about me",
-        "firstInfoTitle": "1. The guitarist",
-        "firstInfoContent": "",
-        "secundInfoTitle": "2. The computer scientist",
-        "secundInfoContent": "",
-        "thirdInfoTitle": "3. The hobbies",
-        "thirdInfoContent": "",
-        "forthInfoTitle": "4. The sport",
-        "forthInfoContent": "",
-        "fifthInfoTitle": "5. The personality",
-        "fifthInfoContent": ""
+        "title": "A Few More Things About Me",
+        "firstInfoTitle": "1. The Guitarist",
+        "firstInfoContent": "<p>Music has been an integral part of my life since childhood. I have been playing the guitar since I was thirteen, and it remains a lifelong passion.</p><p>I graduated from the Kőbánya Music Studio as a professional guitarist. It was an immense honor to play alongside renowned Hungarian music icons such as Egon Póka, Gyula Babos, and István Vörös.</p><p>On the following page, you can learn more about my musical career: <a href='https://theguitarist.thomashorvath.hu' target='_blank'> TheGuitarist.ThomaHorvath.hu</a></p>",
+        "secundInfoTitle": "2. The IT Professional",
+        "secundInfoContent": "<p>The world of computers fascinated me from a young age, during the era of MS-DOS and the Commodore 64.</p><p>Although I initially pursued music, the advent of COVID-19 radically transformed my life. Music took a backseat, but seizing a great opportunity, I began studying IT. This field ignited the same enthusiasm in me as when I first started with music.</p>",
+        "thirdInfoTitle": "3. Hobbies",
+        "thirdInfoContent": "<p>In my free time, I enjoy creating things. I like DIY projects and solving problems around the house, whether it's painting, electrical work, or car repairs.</p><p>I'm eager to immerse myself in learning new things. I enjoy hiking, reading, listening to music, playing guitar, and continually learning.</p>",
+        "forthInfoTitle": "4. Sports",
+        "forthInfoContent": "<p>Fitness and bodybuilding have always amazed me. As a teenager, I eagerly went to the gym, though as I entered the professional world, I found it harder to make time for regular workouts. I plan to start exercising again soon.</p><p>My greatest inspiration is Arnold Schwarzenegger.</p>",
+        "fifthInfoTitle": "5. Personality",
+        "fifthInfoContent": "<p>You can count on me to perform my tasks reliably and precisely in any situation.</p><p>I am determined to achieve my goals while adapting easily to new situations and working effectively with others.</p>"
     },
     "quote": "\"Don't just work, create something. True success lies in loving what you do.\"",
     "skills": {

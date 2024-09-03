@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Navbar from '../Navbar/Navbar';
 import LogoLight from '../../assets/img/Logo_Thomas_light.png';
 
@@ -34,13 +34,13 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <Link to="/" className="logo">
+        <HashLink to="/#home" className="logo">
           <img
             className="nav-logo-img js-main-logo"
             src={LogoLight} 
             alt="fehér színű logo"
           />
-        </Link>
+        </HashLink>
         <Navbar isOpen={isOpen} toggleMenu={toggleMenu} />
         <div className="icons">
           <LanguageSelector />

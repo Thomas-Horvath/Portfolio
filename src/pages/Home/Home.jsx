@@ -1,14 +1,15 @@
-import React , { useContext} from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import wawe from '../../../assets/img/wave.svg';
-import { LanguageContext } from '../../../contexts/LanguageContext';
+import { HashLink } from 'react-router-hash-link';
+import { img } from '../../assets/assets.js';
+import { LanguageContext } from '../../contexts/LanguageContext';
 
 const Home = () => {
   const { translations } = useContext(LanguageContext);
 
   return (
-    <div >
-      <section className="home section-link" id="home">
+    <>
+      <section className="home section-link" id="home" data-observe >
         <h1>{translations.home.name}</h1>
         <div className="content-container">
           <p>{translations.home.profession1}</p>
@@ -16,9 +17,9 @@ const Home = () => {
         </div>
         <h3>{translations.home.subTitle}</h3>
 
-        <Link to="/#contact" className="btn home-btn">
+        <HashLink to="/#contact" className="btn home-btn">
           <i className="fa-solid fa-paper-plane"></i>{translations.home.buttonText}
-        </Link>
+        </HashLink>
 
         <div className="home-social-media">
           <Link
@@ -48,11 +49,11 @@ const Home = () => {
         </div>
       </section>
       <img
-        src={wawe}
+        src={img.wave}
         alt="fekete hullám háttér"
         className="wave js-wave"
       />
-    </div>
+    </>
   );
 }
 
