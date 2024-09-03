@@ -37,9 +37,9 @@ const ProjectPage = () => {
   const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);
 
   return (
-    <div id='projects' data-observe>
-      <section className="portfolio section-link" id="portfolio">
-        <div className="portfolio-wrapper">
+  
+      <section className="portfolio section-link project-page" id="projects" data-observe>
+        <div className="portfolio-wrapper project-page-wrapper">
           <div className="project-btn-group">
             <button
               className={`btn ${activeCategory === 'All' ? 'select-active' : ''}`}
@@ -66,7 +66,7 @@ const ProjectPage = () => {
               Alkalmazások
             </button>
           </div>
-          <div className="card-wrapper js-projectPage-card-wrapper">
+          <div className="project-grid">
             {paginatedProjects.map(project => (
               <ProjectCard key={project.id} data={project} />
             ))}
@@ -84,7 +84,7 @@ const ProjectPage = () => {
           </div>
         </div>
       </section>
-    </div>
+  
   );
 }
 

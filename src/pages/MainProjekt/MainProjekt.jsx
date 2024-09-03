@@ -18,7 +18,7 @@ const MainProjekt = () => {
           <h2>portfólió</h2>
           <span>Néhány projektem</span>
         </div>
-        <div className="card-wrapper js-card-wrapper">
+        <div className="project-grid js-card-wrapper">
           {data}
         </div>
 

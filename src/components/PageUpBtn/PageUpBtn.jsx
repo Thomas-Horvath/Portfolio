@@ -1,10 +1,19 @@
 import React from 'react';
-import { HashLink } from 'react-router-hash-link';
 
 const PageUpBtn = () => {
-  return (
-<HashLink className="scrollUp" to="/#home" title="Ugrás a lap tetejére"><i className="fa-solid fa-arrow-up"></i></HashLink>
-  )
-}
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // This option provides smooth scrolling
+    });
+  };
 
-export default PageUpBtn
+  return (
+    <button className="scrollUp" onClick={scrollToTop} title="Ugrás a lap tetejére">
+      <i className="fa-solid fa-arrow-up"></i>
+    </button>
+  );
+};
+
+export default PageUpBtn;

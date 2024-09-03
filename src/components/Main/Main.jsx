@@ -6,8 +6,7 @@ import Skills from '../../pages/Skills/Skills';
 import MainProjekt from '../../pages/MainProjekt/MainProjekt';
 import Blog from '../../pages/Blog/Blog';
 import Contact from '../../pages/Contact/Contact';
-import Footer from '../Footer/Footer';
-import PageUpBtn from '../PageUpBtn/PageUpBtn';
+
 
 const Main = () => {
   return (
@@ -19,8 +18,6 @@ const Main = () => {
         <MainProjekt />
         <Blog />
         <Contact />
-        <Footer/>
-        <PageUpBtn/>
     </>
   )
 }

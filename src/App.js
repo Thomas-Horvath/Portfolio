@@ -3,7 +3,10 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Projects from './pages/ProjectPage/ProjectPage';
+import ProjectDetails from './pages/ProjectDetails/ProjectDetails';
 import { LanguageProvider } from './contexts/LanguageContext';
+import Footer from './components/Footer/Footer';
+import PageUpBtn from './components/PageUpBtn/PageUpBtn';
 
 function App() {
   return (
@@ -14,9 +17,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/info/:category" element={<Projects />} />
             <Route path="/blog/:id" element={<Projects />} />
           </Routes>
+          <Footer />
+          <PageUpBtn />
         </Router>
       </LanguageProvider>
     </div>
