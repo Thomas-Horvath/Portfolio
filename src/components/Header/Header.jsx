@@ -24,7 +24,7 @@ const Header = () => {
   useEffect(() => {
     const currentHash = location.hash;
 
-    if (currentHash === '#home') {
+    if (currentHash === '#home' || currentHash === '') {
       // Főoldalon vagyunk, figyeljük a scroll eseményt
       const handleScroll = () => {
         if (window.scrollY > 0) {
