@@ -325,7 +325,11 @@
         "buttonsAll": "All",
         "buttonFront": "Front-end",
         "buttonBack": "Back-end",
-        "buttonApps": "Applications"
+        "buttonApps": "Applications",
+        "buttonsAllType": "All",
+        "buttonFrontType": "Website",
+        "buttonBackType": "Back-end",
+        "buttonAppsType": "Application"
     },
     "projectCard": {
         "buttonDetails": "Details"

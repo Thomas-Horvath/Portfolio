@@ -325,7 +325,11 @@
         "buttonsAll": "Összes",
         "buttonFront": "Front-end",
         "buttonBack": "Back-end",
-        "buttonApps": "Alkalmazások"
+        "buttonApps": "Alkalmazások",
+        "buttonsAllType": "All",
+        "buttonFrontType": "Weboldal",
+        "buttonBackType": "Back-end",
+        "buttonAppsType": "Alkalmazás"
     },
     "projectCard": {
         "buttonDetails": "Részletek"

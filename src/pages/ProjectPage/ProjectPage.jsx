@@ -55,25 +55,25 @@ const ProjectPage = () => {
         <div className="project-btn-group">
           <button
             className={`btn ${activeCategory === 'All' ? 'select-active' : ''}`}
-            onClick={() => handleCategoryChange('All')}
+            onClick={() => handleCategoryChange(translations.projectPageContent.buttonsAllType)}
           >
             {translations.projectPageContent.buttonsAll}
           </button>
           <button
-            className={`btn ${activeCategory === 'Weboldal' ? 'select-active' : ''}`}
-            onClick={() => handleCategoryChange('Weboldal')}
+            className={`btn ${activeCategory === 'Weboldal'  ? 'select-active' : ''}`}
+            onClick={() => handleCategoryChange(translations.projectPageContent.buttonFrontType)}
           >
             {translations.projectPageContent.buttonFront}
           </button>
           <button
             className={`btn ${activeCategory === 'Back-end' ? 'select-active' : ''}`}
-            onClick={() => handleCategoryChange('Back-end')}
+            onClick={() => handleCategoryChange(translations.projectPageContent.buttonBackType)}
           >
             {translations.projectPageContent.buttonBack}
           </button>
           <button
             className={`btn ${activeCategory === 'Alkalmazás' ? 'select-active' : ''}`}
-            onClick={() => handleCategoryChange('Alkalmazás')}
+            onClick={() => handleCategoryChange(translations.projectPageContent.buttonAppsType)}
           >
             {translations.projectPageContent.buttonApps}
           </button>
