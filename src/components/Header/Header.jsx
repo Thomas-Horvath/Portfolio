@@ -22,9 +22,10 @@ const Header = () => {
   
   // Figyeli az URL-t, és beállítja a scroll állapotot az oldal függvényében
   useEffect(() => {
-    const currentHash = location.hash;
+    const currentHash = location.pathname;
+  
 
-    if (currentHash === '#home' || currentHash === '') {
+    if (currentHash !== '/projects' && !currentHash.startsWith('/info/') && !currentHash.startsWith('/blog/')) {
       // Főoldalon vagyunk, figyeljük a scroll eseményt
       const handleScroll = () => {
         if (window.scrollY > 0) {
@@ -47,7 +48,7 @@ const Header = () => {
       // Nem a főoldalon vagyunk, alapértelmezetten true-ra állítjuk
       setIsScrolled(true);
     }
-  }, [location.hash]);
+  }, [location.pathname]);
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
