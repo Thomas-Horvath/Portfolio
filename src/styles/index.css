@@ -855,6 +855,15 @@ section {
 }
 
 .project-card-content {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card.touched .project-card-content {
+  opacity: 1;
+}
+
+.project-card-content {
   position: absolute;
   top: 0;
   left: 0;
