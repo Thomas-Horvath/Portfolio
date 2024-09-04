@@ -1,9 +1,14 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser'; // Győződj meg róla, hogy telepítetted az emailjs-com csomagot
+import { LanguageContext } from '../../contexts/LanguageContext';
 
 const Contact = () => {
+  const { translations } = useContext(LanguageContext);
   const [statusMessage, setStatusMessage] = useState('');
   const contactFormRef = useRef();
+
+
 
   useEffect(() => {
     const formInputs = document.querySelectorAll(".form-input");
@@ -24,25 +29,25 @@ const Contact = () => {
     // Cleanup function to remove event listeners
     return () => {
       formInputs.forEach(input => {
-        input.removeEventListener("focus", () => {});
-        input.removeEventListener("blur", () => {});
+        input.removeEventListener("focus", () => { });
+        input.removeEventListener("blur", () => { });
       });
-    }; 
+    };
   }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     const form = contactFormRef.current;
-    const serviceID = process.env.REACT_APP_SERVICE_ID; 
-    const templateID = process.env.REACT_APP_TEMPLATE_ID; 
-    const publicKey = process.env.REACT_APP_PUBLIC_KEY; 
-  
+    const serviceID = process.env.REACT_APP_SERVICE_ID;
+    const templateID = process.env.REACT_APP_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
-    emailjs.sendForm(serviceID, templateID, form, publicKey) 
+
+    emailjs.sendForm(serviceID, templateID, form, publicKey)    
       .then(response => {
         console.log(response.status, response.text);
-        setStatusMessage("Az üzenetet sikeresen elküldtük! ✅");
+        setStatusMessage(translations.contactPageContent.successMessage);
         setTimeout(() => setStatusMessage(""), 4000);
         form.reset();
         const labels = form.querySelectorAll('.form-label');
@@ -51,7 +56,7 @@ const Contact = () => {
         });
       }, error => {
         console.log(error);
-        setStatusMessage("Az üzenetet nem sikerült elküldeni! ❌");
+        setStatusMessage(translations.contactPageContent.failMessage);
         setTimeout(() => setStatusMessage(""), 4000);
       });
   };
@@ -59,76 +64,84 @@ const Contact = () => {
   return (
     <section className="contact section-link" id="contact" data-observe>
       <div className="main-heading">
-        <h2>Kapcsolat</h2>
-        <span>Kérdezz bátran</span>
+        <h2>{translations.contactPageContent.headingTitle}</h2>
+        <span>{translations.contactPageContent.subHeading}</span>
       </div>
       <div className="contact-container container">
         <div className="contact-content">
           <div className="contact-info-list">
-            <div className="contact-info-item">
-              <div className="icon-container">
-                <i className="fa-solid fa-square-phone"></i>
-              </div>
-              <a href="tel:+36301234567">
-                <div className="contact-group">
-                  <p className="contact-title">Telefon</p>
-                  <p className="contact-subtitle">+36 30 123 4567</p>
+            {translations.contactPageContent.contactInfoItems.map((item, index) => (
+              <div className="contact-info-item" key={index}>
+                <div className="icon-container">
+                  <i className={item.icon}></i>
                 </div>
-              </a>
-            </div>
-
-            <div className="contact-info-item">
-              <div className="icon-container">
-                <i className="fa-solid fa-envelope"></i>
+                {item.link ? (
+                  <Link to={item.link}>
+                    <div className="contact-group">
+                      <p className="contact-title">{item.title}</p>
+                      <p className="contact-subtitle">{item.subtitle}</p>
+                    </div>
+                  </Link>
+                ) : (
+                  <div className="contact-group">
+                    <p className="contact-title">{item.title}</p>
+                    <p className="contact-subtitle">{item.subtitle}</p>
+                  </div>
+                )}
               </div>
-              <a href="mailto:template@template.com">
-                <div className="contact-group">
-                  <p className="contact-title">Email</p>
-                  <p className="contact-subtitle">thomashorvathweb@gmail.hu</p>
-                </div>
-              </a>
-            </div>
-
-            <div className="contact-info-item">
-              <div className="icon-container">
-                <i className="fa-solid fa-location-dot"></i>
-              </div>
-              <div className="contact-group">
-                <p className="contact-title">Cím</p>
-                <p className="contact-subtitle">Pomáz - HU</p>
-              </div>
-            </div>
-
+            ))}
           </div>
           <form className="form" id="contact-form" ref={contactFormRef} onSubmit={sendEmail}>
             <div className="form-container">
               <div className="form-content">
                 <div className="form-group">
-                  <label htmlFor="name" className="form-label">név</label>
-                  <input type="text" name="user-name" id="name" className="input-primary form-input"
-                    autoComplete="off" required />
+                  <label htmlFor="name" className="form-label">{translations.contactPageContent.formLabels.name}</label>
+                  <input
+                    type="text"
+                    name="user-name"
+                    id="name"
+                    className="input-primary form-input"
+                    autoComplete="off"
+                    required
+                  />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="email" className="form-label">email</label>
-                  <input type="email" name="user-email" id="email" className="input-primary form-input"
-                    autoComplete="off" required />
+                  <label htmlFor="email" className="form-label">{translations.contactPageContent.formLabels.email}</label>
+                  <input
+                    type="email"
+                    name="user-email"
+                    id="email"
+                    className="input-primary form-input"
+                    autoComplete="off"
+                    required
+                  />
                 </div>
               </div>
               <div className="form-group">
-                <label htmlFor="subject" className="form-label">tárgy</label>
-                <input type="text" name="subject" id="subject" className="input-primary form-input"
-                  autoComplete="off" />
+                <label htmlFor="subject" className="form-label">{translations.contactPageContent.formLabels.subject}</label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  className="input-primary form-input"
+                  autoComplete="off"
+                />
               </div>
               <div className="form-group">
-                <label htmlFor="message" className="form-label">üzenet</label>
-                <textarea name="message" id="message" className="input-primary form-input"
-                  autoComplete="off" required></textarea>
+                <label htmlFor="message" className="form-label">{translations.contactPageContent.formLabels.message}</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  className="input-primary form-input"
+                  autoComplete="off"
+                  required
+                ></textarea>
               </div>
               <div className="form-status-box">
                 <p>{statusMessage}</p>
               </div>
               <button type="submit" name="submit" className="btn btn-contact">
-                <i className="fa-solid fa-paper-plane"></i>Küldés
+                <i className="fa-solid fa-paper-plane"></i>{translations.contactPageContent.submitButtonText}
               </button>
             </div>
           </form>
@@ -136,6 +149,8 @@ const Contact = () => {
       </div>
     </section>
   );
+
+
 };
 
 export default Contact;

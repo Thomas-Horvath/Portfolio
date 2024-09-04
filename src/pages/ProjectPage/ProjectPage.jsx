@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import projects from '../../data/projects';
+import React, { useState, useEffect, useContext } from 'react';
+import { LanguageContext } from '../../contexts/LanguageContext';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 // Constants
 const ITEMS_PER_PAGE = 6;
 
 const ProjectPage = () => {
+  const { translations } = useContext(LanguageContext);
   const [currentPage, setCurrentPage] = useState(1);
-  const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [filteredProjects, setFilteredProjects] = useState(translations.projects);
   const [activeCategory, setActiveCategory] = useState('All');
 
   // Handler for category change
@@ -24,67 +25,77 @@ const ProjectPage = () => {
   // Filter projects based on the selected category
   useEffect(() => {
     if (activeCategory === 'All' || activeCategory === '') {
-      setFilteredProjects(projects);
+      setFilteredProjects(translations.projects);
     } else {
-      setFilteredProjects(projects.filter(project => project.type === activeCategory));
+      setFilteredProjects(translations.projects.filter(project => project.type === activeCategory));
     }
-  }, [activeCategory]);
+  }, [activeCategory, translations.projects]);
 
   // Get paginated projects for the current page
   const paginatedProjects = filteredProjects.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
-  
+
   // Calculate total pages
   const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);
 
+  // Scroll to top when page changes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+    return () => clearTimeout(timer);
+  }, [currentPage, filteredProjects]);
+
   return (
-  
-      <section className="portfolio section-link project-page" id="projects" data-observe>
-        <div className="portfolio-wrapper project-page-wrapper">
-          <div className="project-btn-group">
-            <button
-              className={`btn ${activeCategory === 'All' ? 'select-active' : ''}`}
-              onClick={() => handleCategoryChange('All')}
-            >
-              Összes
-            </button>
-            <button
-              className={`btn ${activeCategory === 'Weboldal' ? 'select-active' : ''}`}
-              onClick={() => handleCategoryChange('Weboldal')}
-            >
-              Front-end
-            </button>
-            <button
-              className={`btn ${activeCategory === 'Back-end' ? 'select-active' : ''}`}
-              onClick={() => handleCategoryChange('Back-end')}
-            >
-              Back-end
-            </button>
-            <button
-              className={`btn ${activeCategory === 'Alkalmazás' ? 'select-active' : ''}`}
-              onClick={() => handleCategoryChange('Alkalmazás')}
-            >
-              Alkalmazások
-            </button>
-          </div>
-          <div className="project-grid">
-            {paginatedProjects.map(project => (
-              <ProjectCard key={project.id} data={project} />
-            ))}
-          </div>
-          <div className="pagination js-pagination">
-            {[...Array(totalPages).keys()].map(page => (
-              <button
-                key={page + 1}
-                className={`pagination-btn btn ${currentPage === page + 1 ? 'activeBtn' : ''}`}
-                onClick={() => handlePageChange(page + 1)}
-              >
-                {page + 1}
-              </button>
-            ))}
-          </div>
+    <section className="portfolio section-link project-page" id="projects" data-observe>
+      <div className="portfolio-wrapper">
+        <div className="main-heading">
+          <h2>{translations.projectPageContent.headingTitle}</h2>
+          <span>{translations.projectPageContent.subHeading}</span>
         </div>
-      </section>
-  
+        <div className="project-btn-group">
+          <button
+            className={`btn ${activeCategory === 'All' ? 'select-active' : ''}`}
+            onClick={() => handleCategoryChange('All')}
+          >
+            {translations.projectPageContent.buttonsAll}
+          </button>
+          <button
+            className={`btn ${activeCategory === 'Weboldal' ? 'select-active' : ''}`}
+            onClick={() => handleCategoryChange('Weboldal')}
+          >
+            {translations.projectPageContent.buttonFront}
+          </button>
+          <button
+            className={`btn ${activeCategory === 'Back-end' ? 'select-active' : ''}`}
+            onClick={() => handleCategoryChange('Back-end')}
+          >
+            {translations.projectPageContent.buttonBack}
+          </button>
+          <button
+            className={`btn ${activeCategory === 'Alkalmazás' ? 'select-active' : ''}`}
+            onClick={() => handleCategoryChange('Alkalmazás')}
+          >
+            {translations.projectPageContent.buttonApps}
+          </button>
+        </div>
+        <div className="project-grid">
+          {paginatedProjects.map(project => (
+            <ProjectCard key={project.id} data={project} />
+          ))}
+        </div>
+        <div className="pagination js-pagination">
+          {[...Array(totalPages).keys()].map(page => (
+            <button
+              key={page + 1}
+              className={`pagination-btn btn ${currentPage === page + 1 ? 'activeBtn' : ''}`}
+              onClick={() => handlePageChange(page + 1)}
+            >
+              {page + 1}
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 

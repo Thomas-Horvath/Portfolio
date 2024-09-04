@@ -1,25 +1,31 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { img } from '../../assets/assets';
+import { LanguageContext } from '../../contexts/LanguageContext';
+
 
 
 const Blog = () => {
+    const { translations } = useContext(LanguageContext);
     return (
         <section className="blog section-link" id="blog" data-observe>
             <div className="main-heading">
-                <h2>Blog</h2>
-                <span>Néhány gondolatom</span>
+                <h2>{translations.mainBlogPage.headingTitle}</h2>
+                <span>{translations.mainBlogPage.subHeading}</span>
             </div>
             <div className="blog-wrapper">
                 <div className="blogContent">
+                    <img className='blog-wave' src={img.wave_grey} alt="" />
                     <div className="carousel-container">
                         <Swiper
                             spaceBetween={1}
-                            slidesPerView={2}
+                            slidesPerView={1}
                             cssMode={true}
                             navigation={true}
                             pagination={false}
@@ -29,50 +35,61 @@ const Blog = () => {
                             autoplay={{ delay: 3000 }}
                             modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
                             className="blog_slider"
+                            breakpoints={{
+                                768: {
+                                    slidesPerView: 2, // 768px felett 2 slide látható egyszerre
+                                },
+                                // Itt további breakpoints-okat is hozzáadhatsz, ha szükséges
+                                992: {
+                                    slidesPerView: 3, // Például 1024px felett 3 slide
+                                },
+                            }}
                         >
                             <SwiperSlide>
                                 <div className="blog-content">
                                     <div className="content-top">
-                                        <h2>1. Html a gyakorlatban</h2>
-                                        <img src="./assets/img/blog_img/HTML.svg" alt="html blog kép" />
-                                        <p>Kezdjük azzal, hogy mi is az a HTML nyelv....</p>
+                                        <h2>{translations.mainBlogPage.blogContent1.cardtitle}</h2>
+                                        <img src={`${process.env.PUBLIC_URL}${translations.mainBlogPage.blogContent1.imageSrc}`}  alt={translations.mainBlogPage.blogContent1.imageAlt} />
+                                        <p>{translations.mainBlogPage.blogContent1.description}</p>
                                     </div>
-                                    <a href="./blog.html#blog-1" className="btn-secund">Tovább..</a>
+                                    <Link to={translations.mainBlogPage.blogContent1.link} className="btn-secund">{translations.mainBlogPage.blogContent1.buttonText}</Link>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="blog-content">
                                     <div className="content-top">
-                                        <h2>2. A CSS varázslat</h2>
-                                        <img src="./assets/img/blog_img/css.svg" alt="css blog kép" />
-                                        <p>A css a modern weboldal megjelenítésének varázslatos eszköze...</p>
+                                        <h2>{translations.mainBlogPage.blogContent2.cardtitle}</h2>
+                                        <img src={`${process.env.PUBLIC_URL}${translations.mainBlogPage.blogContent2.imageSrc}`}  alt={translations.mainBlogPage.blogContent2.imageAlt} />
+                                        <p>{translations.mainBlogPage.blogContent2.description}</p>
                                     </div>
-                                    <a href="./blog.html#blog-2" className="btn-secund">Tovább..</a>
+                                    <Link to={translations.mainBlogPage.blogContent2.link} className="btn-secund">{translations.mainBlogPage.blogContent2.buttonText}</Link>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="blog-content">
                                     <div className="content-top">
-                                        <h2>3. JavaScript</h2>
-                                        <img src="./assets/img/blog_img/js.svg" alt="javascript blog kép" />
-                                        <p>Mikor azt szeretnéd, hogy weboldalad interaktívan működjön...</p>
+                                        <h2>{translations.mainBlogPage.blogContent3.cardtitle}</h2>
+                                        <img src={`${process.env.PUBLIC_URL}${translations.mainBlogPage.blogContent3.imageSrc}`}  alt={translations.mainBlogPage.blogContent3.imageAlt} />
+                                        <p>{translations.mainBlogPage.blogContent3.description}</p>
                                     </div>
-                                    <a href="./blog.html#blog-3" className="btn-secund">Tovább..</a>
+                                    <Link to={translations.mainBlogPage.blogContent3.link} className="btn-secund">{translations.mainBlogPage.blogContent3.buttonText}</Link>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="blog-content">
                                     <div className="content-top">
-                                        <h2>4. Vigyázz az adataidra</h2>
-                                        <img src="./assets/img/blog_img/security.svg" alt="biztonság blog bejegyzés" />
-                                        <p>Volt már úgy, hogy azt érezted figyelnek? A mai kor digitális világában egyre...</p>
+                                        <h2>{translations.mainBlogPage.blogContent4.cardtitle}</h2>
+                                        <img src={`${process.env.PUBLIC_URL}${translations.mainBlogPage.blogContent4.imageSrc}`}  alt={translations.mainBlogPage.blogContent4.imageAlt} />
+                                        <p>{translations.mainBlogPage.blogContent4.description}</p>
                                     </div>
-                                    <a href="./blog.html#blog-4" className="btn-secund">Tovább..</a>
+                                    <Link to={translations.mainBlogPage.blogContent4.link} className="btn-secund">{translations.mainBlogPage.blogContent4.buttonText}</Link>
                                 </div>
                             </SwiperSlide>
+                            
                         </Swiper>
 
                     </div>
+                    <img className='blog-wave-reverse' src={img.wave_grey_reverse} alt="szürke hullám forma" />
                 </div>
             </div>
         </section>

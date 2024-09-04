@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import { LanguageContext } from '../../contexts/LanguageContext';
+import { img } from '../../assets//assets';
 
 const Quote = () => {
     const { translations } = useContext(LanguageContext);
@@ -9,6 +10,8 @@ const Quote = () => {
                 <p>{translations.quote}</p>
                 <p>- Dale Carnegie</p>
             </div>
+
+            <img className="grey-wave" src={img.wave_grey_reverse} alt="" />
         </section>
     )
 }

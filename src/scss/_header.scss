@@ -1,13 +1,13 @@
 .header {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
     height: 80px;
     padding: 0 calc(2rem - 12px) 0 2rem;
     background: $bg-header-dark ;
     height: 70px;
     border-bottom: 1px solid #f5b32f8c;
-    transition: all 0.3s ease;
+    transition: height 0.3s ease;
 }
 
 .header-container {
@@ -47,7 +47,7 @@
         width: 40px;
         display: block;
         align-self: center;
-        transition: transform .2s ease, color .3s ease;
+        transition: transform .2s ease,color .3s ease ;
     }
 
     .icon-container:hover {
@@ -86,7 +86,6 @@
     z-index: 1;
     top: -110%;
     visibility: hidden;
-    // border-bottom: 1px solid $main-color-55;
     transition: top .4s ease, visibility .4s ease;
 }
 

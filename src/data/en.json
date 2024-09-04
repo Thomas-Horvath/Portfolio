@@ -42,6 +42,373 @@
     "quote": "\"Don't just work, create something. True success lies in loving what you do.\"",
     "skills": {
         "headingTitle": "Skills",
-        "headingSpan": "I have"
+        "headingSpan": "I have",
+        "frontEndTitle": "Front-End",
+        "frontEndSkills": [
+            {
+                "name": "HTML 5",
+                "icon": "htmlIcon"
+            },
+            {
+                "name": "CSS 3",
+                "icon": "cssIcon"
+            },
+            {
+                "name": "Javascript",
+                "icon": "jsIcon"
+            },
+            {
+                "name": "Sass",
+                "icon": "sassIcon"
+            },
+            {
+                "name": "React",
+                "icon": "reactIcon"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "bootstrapIcon"
+            }
+        ],
+        "backEndTitle": "Back-End",
+        "backEndSkills": [
+            {
+                "name": "Node js",
+                "icon": "nodejsIcon"
+            },
+            {
+                "name": "Python",
+                "icon": "pythonIcon"
+            },
+            {
+                "name": "Express",
+                "icon": "expressIcon"
+            },
+            {
+                "name": "Django",
+                "icon": "djangoIcon"
+            }
+        ],
+        "databaseTitle": "Databases",
+        "databaseSkills": [
+            {
+                "name": "MsSql",
+                "icon": "mssqlIcon"
+            },
+            {
+                "name": "Mysql",
+                "icon": "mysqlIcon"
+            },
+            {
+                "name": "MongoDb",
+                "icon": "mongodbIcon"
+            }
+        ],
+        "otherTitle": "Others",
+        "otherSkills": [
+            {
+                "name": "Git",
+                "icon": "gitIcon"
+            },
+            {
+                "name": "Github",
+                "icon": "githubIcon"
+            },
+            {
+                "name": "Figma",
+                "icon": "figmaIcon"
+            },
+            {
+                "name": "VsCode",
+                "icon": "vscodeIcon"
+            },
+            {
+                "name": "Linux",
+                "icon": "linuxIcon"
+            }
+        ]
+    },
+    "projects": [
+        {
+            "id": 1,
+            "type": "Website",
+            "title": "Leather Craftsman Website",
+            "cardDescription": "Sample Béla's leather craftsman portfolio website.",
+            "popupDescription": "Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/leadherShop.webp",
+            "imageAlt": "Leather craftsman project image",
+            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
+            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 2,
+            "type": "Website",
+            "title": "Gipsz Jakab Portfolio Page",
+            "cardDescription": "Gipsz Jakab frontend web developer portfolio website.",
+            "popupDescription": "Gipsz Jakab frontend web developer portfolio website.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/gipsz.webp",
+            "imageAlt": "Gipsz Jakab project image",
+            "githubLink": "https://github.com/Thomas-Horvath/PK_project1_porfolio_html_css-",
+            "githubPagesLink": "https://thomas-horvath.github.io/PK_project1_porfolio_html_css-/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 3,
+            "type": "Back-end",
+            "title": "Sample Project 3",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": "This project is a template for displaying cards.3",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Sass",
+                "Bootstrap"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Sample Project 3 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 4,
+            "type": "Back-end",
+            "title": "Sample Project 4",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": "This project is a template for displaying cards. 4",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Sample Project 4 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 5,
+            "type": "Application",
+            "title": "Sample Project 5",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": "This project is a template for displaying cards.5",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Sample Project 5 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 6,
+            "type": "Website",
+            "title": "Sample Project 6",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": "This project is a template for displaying cards. 6",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Sample Project 6 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 7,
+            "type": "Back-end",
+            "title": "Sample Project 7",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": "This project is a template for displaying cards. 7",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Sample Project 7 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 8,
+            "type": "Website",
+            "title": "Sample Project 8",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": "This project is a template for displaying cards. 8",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Sample Project 8 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 9,
+            "type": "Application",
+            "title": "Sample Project 9",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": "This project is a template for displaying cards.9",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Sample Project 9 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        }
+    ],
+    "projectPageContent": {
+        "headingTitle": "Portfolio",
+        "subHeading": "My Work So Far",
+        "buttonsAll": "All",
+        "buttonFront": "Front-end",
+        "buttonBack": "Back-end",
+        "buttonApps": "Applications"
+    },
+    "projectCard": {
+        "buttonDetails": "Details"
+    },
+    "backButton": "Back",
+    "mainProjectPage": {
+        "headingTitle": "Portfolio",
+        "subHeading": "Some of My Projects",
+        "buttonNext": "Next"
+    },
+    "mainBlogPage": {
+        "headingTitle": "Blog",
+        "subHeading": "Some of My Thoughts",
+        "blogContent1": {
+            "cardtitle": "1. HTML in Practice",
+            "imageSrc": "/blog_img/HTML.svg",
+            "imageAlt": "HTML blog image",
+            "description": "Let's start with what HTML is....",
+            "link": "/blog/1",
+            "buttonText": "Read More.."
+        },
+        "blogContent2": {
+            "cardtitle": "2. The Magic of CSS",
+            "imageSrc": "/blog_img/css.svg",
+            "imageAlt": "CSS blog image",
+            "description": "CSS is the magical tool for modern web page styling...",
+            "link": "/blog/2",
+            "buttonText": "Read More.."
+        },
+        "blogContent3": {
+            "cardtitle": "3. JavaScript",
+            "imageSrc": "/blog_img/js.svg",
+            "imageAlt": "JavaScript blog image",
+            "description": "When you want your website to work interactively...",
+            "link": "/blog/3",
+            "buttonText": "Read More.."
+        },
+        "blogContent4": {
+            "cardtitle": "4. Protect Your Data",
+            "imageSrc": "/blog_img/security.svg",
+            "imageAlt": "Security blog post",
+            "description": "Have you ever felt like you're being watched? In today's digital age...",
+            "link": "/blog/4",
+            "buttonText": "Read More.."
+        }
+    },
+    "contactPageContent": {
+        "headingTitle": "Contact",
+        "subHeading": "Feel free to ask",
+        "contactInfoItems": [
+            {
+                "icon": "fa-solid fa-square-phone",
+                "title": "Phone",
+                "subtitle": "+36 30 123 4567",
+                "link": "tel:+36301234567"
+            },
+            {
+                "icon": "fa-solid fa-envelope",
+                "title": "Email",
+                "subtitle": "thomashorvathweb@gmail.hu",
+                "link": "mailto:template@template.com"
+            },
+            {
+                "icon": "fa-solid fa-location-dot",
+                "title": "Address",
+                "subtitle": "Pomáz - HU"
+            }
+        ],
+        "formLabels": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message"
+        },
+        "statusMessage": "statusMessagePlaceholder",
+        "submitButtonText": "Send",
+        "successMessage": "Your message has been successfully sent! ✅",
+        "failMessage": "Failed to send the message! ❌"
+    },
+    "footer": {
+        "policy": "Privacy Policy",
+        "impressum": "Impress",
+        "cookies": "Cookie Management",
+        "additionalText": "All rights reserved!"
     }
 }

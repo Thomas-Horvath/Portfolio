@@ -1,4 +1,5 @@
-import React, { useContext , useEffect, useState} from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import Logo from '../../assets/img/Logo_Thomas_main_color.svg';
@@ -33,17 +34,6 @@ const Navbar = ({ isOpen, toggleMenu }) => {
     }
     return activeSection === path;
   };
-  
-  // // Az aktuális hash és path kombinálása
-  // const currentPath = location.pathname + location.hash;
-
-  // // Ellenőrzi, hogy az aktuális path (hash és pathname) megegyezik-e a megadott path-szal
-  // const isActive = (path) => {
-  //   if (Array.isArray(path)) {
-  //     return path.some(p => currentPath === p || location.hash === p);
-  //   }
-  //   return currentPath === path || location.hash === path;
-  // };
 
 
   return (
@@ -51,54 +41,54 @@ const Navbar = ({ isOpen, toggleMenu }) => {
       <img className="nav-logo-img" src={Logo} alt="arany színű logo" />
       <ul className="nav-links">
         <li>
-          <HashLink 
-            className={`nav-link ${isActive('#home') ? 'active' : ''}`} 
-            to="/#home" 
+          <HashLink
+            className={`nav-link ${isActive('#home') ? 'active' : ''}`}
+            to="/#home"
             onClick={toggleMenu}
           >
             {translations.nav.link1}
           </HashLink>
         </li>
         <li>
-          <HashLink 
-            className={`nav-link ${isActive('#about') ? 'active' : ''}`} 
-            to="/#about" 
+          <HashLink
+            className={`nav-link ${isActive('#about') ? 'active' : ''}`}
+            to="/#about"
             onClick={toggleMenu}
           >
             {translations.nav.link2}
           </HashLink>
         </li>
         <li>
-          <HashLink 
-            className={`nav-link ${isActive('#skills') ? 'active' : ''}`} 
-            to="/#skills" 
+          <HashLink
+            className={`nav-link ${isActive('#skills') ? 'active' : ''}`}
+            to="/#skills"
             onClick={toggleMenu}
           >
             {translations.nav.link3}
           </HashLink>
         </li>
         <li>
-          <HashLink 
-            className={`nav-link ${isActive(['/projects', '#projects']) ? 'active' : ''}`} 
-            to="/#projects" 
+          <Link
+            className={`nav-link ${isActive(['/projects', '#projects']) ? 'active' : ''}`}
+            to="/projects"
             onClick={toggleMenu}
           >
             {translations.nav.link4}
-          </HashLink>
+          </Link>
         </li>
         <li>
-          <HashLink 
-            className={`nav-link ${isActive('#blog') ? 'active' : ''}`} 
-            to="/#blog" 
+          <HashLink
+            className={`nav-link ${isActive('#blog') ? 'active' : ''}`}
+            to="/#blog"
             onClick={toggleMenu}
           >
             {translations.nav.link5}
           </HashLink>
         </li>
         <li>
-          <HashLink 
-            className={`nav-link ${isActive('#contact') ? 'active' : ''}`} 
-            to="/#contact" 
+          <HashLink
+            className={`nav-link ${isActive('#contact') ? 'active' : ''}`}
+            to="/#contact"
             onClick={toggleMenu}
           >
             {translations.nav.link6}

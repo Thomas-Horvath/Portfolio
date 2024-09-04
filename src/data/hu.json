@@ -42,6 +42,373 @@
     "quote": "\"Ne csak dolgozz, alkoss is valamit. Az igazi siker abban rejlik, ha szereted, amit csinálsz.\"",
     "skills": {
         "headingTitle": "Készségek",
-        "headingSpan": "Amikkel rendelkezem"
+        "headingSpan": "Amikkel rendelkezem",
+        "frontEndTitle": "Front-End",
+        "frontEndSkills": [
+            {
+                "name": "HTML 5",
+                "icon": "htmlIcon"
+            },
+            {
+                "name": "CSS 3",
+                "icon": "cssIcon"
+            },
+            {
+                "name": "Javascript",
+                "icon": "jsIcon"
+            },
+            {
+                "name": "Sass",
+                "icon": "sassIcon"
+            },
+            {
+                "name": "React",
+                "icon": "reactIcon"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "bootstrapIcon"
+            }
+        ],
+        "backEndTitle": "Back-End",
+        "backEndSkills": [
+            {
+                "name": "Node js",
+                "icon": "nodejsIcon"
+            },
+            {
+                "name": "Python",
+                "icon": "pythonIcon"
+            },
+            {
+                "name": "Express",
+                "icon": "expressIcon"
+            },
+            {
+                "name": "Django",
+                "icon": "djangoIcon"
+            }
+        ],
+        "databaseTitle": "Adatbázisok",
+        "databaseSkills": [
+            {
+                "name": "MsSql",
+                "icon": "mssqlIcon"
+            },
+            {
+                "name": "Mysql",
+                "icon": "mysqlIcon"
+            },
+            {
+                "name": "MongoDb",
+                "icon": "mongodbIcon"
+            }
+        ],
+        "otherTitle": "Egyéb",
+        "otherSkills": [
+            {
+                "name": "Git",
+                "icon": "gitIcon"
+            },
+            {
+                "name": "Github",
+                "icon": "githubIcon"
+            },
+            {
+                "name": "Figma",
+                "icon": "figmaIcon"
+            },
+            {
+                "name": "VsCode",
+                "icon": "vscodeIcon"
+            },
+            {
+                "name": "Linux",
+                "icon": "linuxIcon"
+            }
+        ]
+    },
+    "projects": [
+        {
+            "id": 1,
+            "type": "Weboldal",
+            "title": "Bőrdíszműves weboldal",
+            "cardDescription": "Minta Béla bőrdíszműves portfólió weboldala.",
+            "popupDescription": "Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala.",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/leadherShop.webp",
+            "imageAlt": "Bőrdíszműves projekt kép",
+            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
+            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        },
+        {
+            "id": 2,
+            "type": "Weboldal",
+            "title": "Gipsz Jakab portfólió oldala",
+            "cardDescription": "Gipsz Jakab frontend webfejlesztő portfólió weboldala",
+            "popupDescription": "Gipsz Jakab frontend webfejlesztő portfólió weboldala",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/gipsz.webp",
+            "imageAlt": "Gipsz Jakab projekt kép",
+            "githubLink": "https://github.com/Thomas-Horvath/PK_project1_porfolio_html_css-",
+            "githubPagesLink": "https://thomas-horvath.github.io/PK_project1_porfolio_html_css-/",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        },
+        {
+            "id": 3,
+            "type": "Back-end",
+            "title": "Példa projekt 3",
+            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája.3",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Sass",
+                "Bootstrap"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Példa projekt 3 kép",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        },
+        {
+            "id": 4,
+            "type": "Back-end",
+            "title": "Példa projekt 4",
+            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája. 4",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Példa projekt 4 kép",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        },
+        {
+            "id": 5,
+            "type": "Alkalmazás",
+            "title": "Példa projekt 5",
+            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája.5",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Példa projekt 5 kép",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        },
+        {
+            "id": 6,
+            "type": "Weboldal",
+            "title": "Példa projekt 6",
+            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája. 6",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Példa projekt 6 kép",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        },
+        {
+            "id": 7,
+            "type": "Back-end",
+            "title": "Példa projekt 7",
+            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája. 7",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Példa projekt 7 kép",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        },
+        {
+            "id": 8,
+            "type": "Weboldal",
+            "title": "Példa projekt 8",
+            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája. 8",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Példa projekt 8 kép",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        },
+        {
+            "id": 9,
+            "type": "Alkalmazás",
+            "title": "Példa projekt 9",
+            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája.9",
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project.webp",
+            "imageAlt": "Példa projekt 9 kép",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        }
+    ],
+    "projectPageContent": {
+        "headingTitle": "Portfólió",
+        "subHeading": "Eddigi munkáim",
+        "buttonsAll": "Összes",
+        "buttonFront": "Front-end",
+        "buttonBack": "Back-end",
+        "buttonApps": "Alkalmazások"
+    },
+    "projectCard": {
+        "buttonDetails": "Részletek"
+    },
+    "backButton": " Vissza",
+    "mainProjectPage": {
+        "headingTitle": "Portfólió",
+        "subHeading": "Néhány Projektem",
+        "buttonNext": "Tovább"
+    },
+    "mainBlogPage": {
+        "headingTitle": "Blog",
+        "subHeading": "Néhány gondolatom",
+        "blogContent1": {
+            "cardtitle": "1. Html a gyakorlatban",
+            "imageSrc": "/blog_img/HTML.svg",
+            "imageAlt": "html blog kép",
+            "description": "Kezdjük azzal, hogy mi is az a HTML nyelv....",
+            "link": "/blog/1",
+            "buttonText": "Tovább.."
+        },
+        "blogContent2": {
+            "cardtitle": "2. A CSS varázslat",
+            "imageSrc": "/blog_img/css.svg",
+            "imageAlt": "css blog kép",
+            "description": "A css a modern weboldal megjelenítésének varázslatos eszköze...",
+            "link": "/blog/2",
+            "buttonText": "Tovább.."
+        },
+        "blogContent3": {
+            "cardtitle": "3. JavaScript",
+            "imageSrc": "/blog_img/js.svg",
+            "imageAlt": "javascript blog kép",
+            "description": "Mikor azt szeretnéd, hogy weboldalad interaktívan működjön...",
+            "link": "/blog/3",
+            "buttonText": "Tovább.."
+        },
+        "blogContent4": {
+            "cardtitle": "4. Vigyázz az adataidra",
+            "imageSrc": "/blog_img/security.svg",
+            "imageAlt": "biztonság blog bejegyzés",
+            "description": "Volt már úgy, hogy azt érezted figyelnek?...",
+            "link": "/blog/4",
+            "buttonText": "Tovább.."
+        }
+    },
+    "contactPageContent": {
+        "headingTitle": "Kapcsolat",
+        "subHeading": "Kérdezz bátran",
+        "contactInfoItems": [
+            {
+                "icon": "fa-solid fa-square-phone",
+                "title": "Telefon",
+                "subtitle": "+36 30 123 4567",
+                "link": "tel:+36301234567"
+            },
+            {
+                "icon": "fa-solid fa-envelope",
+                "title": "Email",
+                "subtitle": "thomashorvathweb@gmail.hu",
+                "link": "mailto:template@template.com"
+            },
+            {
+                "icon": "fa-solid fa-location-dot",
+                "title": "Cím",
+                "subtitle": "Pomáz - HU"
+            }
+        ],
+        "formLabels": {
+            "name": "név",
+            "email": "email",
+            "subject": "tárgy",
+            "message": "üzenet"
+        },
+        "statusMessage": "statusMessagePlaceholder",
+        "submitButtonText": "Küldés",
+        "successMessage": "Az üzenetet sikeresen elküldtük! ✅",
+        "failMessage": "Az üzenetet nem sikerült elküldeni! ❌"
+    },
+    "footer": {
+        "policy": "Adatkezelési irányelvek",
+        "impressum": "Impresszum",
+        "cookies": "Sütik kezelése",
+        "additionalText": "Minden jog fenntartva!"
     }
 }

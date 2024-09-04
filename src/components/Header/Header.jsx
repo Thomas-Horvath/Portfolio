@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Navbar from '../Navbar/Navbar';
 import LogoLight from '../../assets/img/Logo_Thomas_light.png';
@@ -8,28 +9,45 @@ import LanguageSelector from '../LanguageSelector/LanguageSelector';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    if (window.innerWidth <= 992) {
+      setIsOpen(!isOpen);
+    }
   };
 
-  // Handle scroll event to update header style
+
+  
+  // Figyeli az URL-t, és beállítja a scroll állapotot az oldal függvényében
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 15) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
+    const currentHash = location.hash;
 
-    window.addEventListener('scroll', handleScroll);
+    if (currentHash === '#home') {
+      // Főoldalon vagyunk, figyeljük a scroll eseményt
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
 
-    // Cleanup function
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+      // Azonnal lefuttatjuk egyszer
+      handleScroll();
+
+      window.addEventListener('scroll', handleScroll);
+
+      // Cleanup function
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    } else {
+      // Nem a főoldalon vagyunk, alapértelmezetten true-ra állítjuk
+      setIsScrolled(true);
+    }
+  }, [location.hash]);
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
@@ -37,7 +55,7 @@ const Header = () => {
         <HashLink to="/#home" className="logo">
           <img
             className="nav-logo-img js-main-logo"
-            src={LogoLight} 
+            src={LogoLight}
             alt="fehér színű logo"
           />
         </HashLink>

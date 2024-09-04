@@ -7,7 +7,7 @@ const projects = [
         type: "Weboldal",
         title: "Bőrdíszműves weboldal",
         cardDescription: "Minta Béla bőrdíszműves portfólió weboldala.",
-        popupDescription: "Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.",
+        popupDescription: "Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.Minta Béla bőrdíszműves portfólió weboldala.",
         technologies: ["HTML", "CSS", "JavaScript"],
         imageSrc: projects_img.leaderShop,
         imageAlt: "Bőrdíszműves projekt kép",

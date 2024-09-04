@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
+import {Link} from 'react-router-dom';
 import InfoBox from './InfoBox/InfoBox';
-import { img } from '../../assets/assets.js';
+import { img , pdf } from '../../assets/assets.js';
 import { LanguageContext } from '../../contexts/LanguageContext';
 
 const About = () => {
@@ -75,8 +76,8 @@ const About = () => {
 
                 <img src={img.wave_yellow} alt="sárga hullám háttér " className="wave-yellow" />
                 <div className="btn-group">
-                    <a href="#contact" className="btn about-btn">{translations.about.contactButton}<i className="fa-solid fa-arrow-right"></i></a>
-                    <a download target="_blank" href="./assets/download/CV_2023hu.pdf" className="btn-secund">
+                    <Link to="#contact" className="btn about-btn">{translations.about.contactButton}<i className="fa-solid fa-arrow-right"></i></Link>
+                    <a download target="_blank" href={pdf.CV} className="btn-secund" rel="noreferrer">
                         <i className="fa-solid fa-file-arrow-down"></i>{translations.about.cvButton}</a>
                 </div>
             </div>

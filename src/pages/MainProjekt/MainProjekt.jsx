@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Link } from 'react-router-dom';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
-import projects from '../../data/projects';
+
 import { img } from '../../assets/assets.js';
+import { LanguageContext } from '../../contexts/LanguageContext';
 
 
 const MainProjekt = () => {
-  const data = projects.slice(0, 3).map(project => <ProjectCard key={project.id} data={project} />);
+  const { translations } = useContext(LanguageContext);
+  const data = translations.projects.slice(0, 3).map(project => <ProjectCard key={project.id} data={project} />);
 
   return (
     <section className="portfolio">
@@ -15,14 +17,14 @@ const MainProjekt = () => {
 
       <div className="portfolio-wrapper section-link" id="projects" data-observe>
         <div className="main-heading">
-          <h2>portfólió</h2>
-          <span>Néhány projektem</span>
+          <h2>{translations.mainProjectPage.headingTitle}</h2>
+          <span>{translations.mainProjectPage.subHeading}</span>
         </div>
         <div className="project-grid js-card-wrapper">
           {data}
         </div>
 
-        <Link to="/projects" className="btn-secund portfolio-btn">További munkáim <i
+        <Link to="/projects" className="btn-secund portfolio-btn">{translations.mainProjectPage.buttonNext} <i
           className="fa-solid fa-arrow-right"></i></Link>
       </div>
 

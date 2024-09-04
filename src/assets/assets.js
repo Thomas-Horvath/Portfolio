@@ -6,6 +6,8 @@ import wave_reverse from './img/wave-reverse.svg';
 import wave_yellow from './img/wave-yellow.svg';
 import wave_yellow_reverse from './img/wave-reverse-yellow.svg';
 import public_pic from './img/Profil_pic_BG.webp';
+import wave_grey_reverse from './img/wave-reverse-grey.svg'
+import wave_grey from './img/wave_grey.svg'
 
 // Front-End ikonok
 import htmlIcon from './icons/skills_icon/html.svg';
@@ -33,6 +35,12 @@ import figmaIcon from './icons/skills_icon/figma.svg';
 import vscodeIcon from './icons/skills_icon/visual-studio-code.svg';
 import linuxIcon from './icons/skills_icon/linux.svg';
 
+//CV
+import CV from "../assets/download/CV_2023hu.pdf"
+
+export const pdf = {
+    CV
+}
 
 export const projects_img = {
     leaderShop,
@@ -46,6 +54,8 @@ export const img = {
     wave_yellow,
     wave_yellow_reverse,
     public_pic,
+    wave_grey_reverse,
+    wave_grey,
 }
 
 export const icons = {
