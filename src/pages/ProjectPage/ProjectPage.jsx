@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
-// Constants
+
 const ITEMS_PER_PAGE = 6;
 
 const ProjectPage = () => {
@@ -11,18 +11,22 @@ const ProjectPage = () => {
   const [filteredProjects, setFilteredProjects] = useState(translations.projects);
   const [activeCategory, setActiveCategory] = useState('All');
 
-  // Handler for category change
+ 
+
+
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
-    setCurrentPage(1); // Reset to the first page on category change
+    setCurrentPage(1); 
   };
 
-  // Handler for page change
+
+
+ 
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
 
-  // Filter projects based on the selected category
+  // categória szerinti szűrés
   useEffect(() => {
     if (activeCategory === 'All' || activeCategory === '') {
       setFilteredProjects(translations.projects);
@@ -31,19 +35,26 @@ const ProjectPage = () => {
     }
   }, [activeCategory, translations.projects]);
 
-  // Get paginated projects for the current page
+ 
   const paginatedProjects = filteredProjects.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
 
-  // Calculate total pages
+
   const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE);
 
-  // Scroll to top when page changes
+
+
+
+
+
   useEffect(() => {
     const timer = setTimeout(() => {
       window.scrollTo(0, 0);
     }, 0);
     return () => clearTimeout(timer);
   }, [currentPage, filteredProjects]);
+
+
+
 
   return (
     <section className="portfolio section-link project-page" id="projects" data-observe>

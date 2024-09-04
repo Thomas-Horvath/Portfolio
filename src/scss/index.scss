@@ -4,6 +4,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -21,7 +22,7 @@ body {
     background-color: $bg-dark;
     color: $text-color-light;
     min-width: 330px;
-overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 li {
@@ -68,6 +69,7 @@ img {
     color: $main-color;
     border: 2px solid $main-color;
 }
+
 .back-btn {
     margin: 0 auto;
 }

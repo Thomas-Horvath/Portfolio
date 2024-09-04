@@ -39,9 +39,8 @@ const Blog = () => {
                                 768: {
                                     slidesPerView: 2, // 768px felett 2 slide látható egyszerre
                                 },
-                                // Itt további breakpoints-okat is hozzáadhatsz, ha szükséges
                                 992: {
-                                    slidesPerView: 3, // Például 1024px felett 3 slide
+                                    slidesPerView: 3, 
                                 },
                             }}
                         >

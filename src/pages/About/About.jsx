@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import InfoBox from './InfoBox/InfoBox';
 import { img , pdf } from '../../assets/assets.js';
 import { LanguageContext } from '../../contexts/LanguageContext';
@@ -76,7 +76,7 @@ const About = () => {
 
                 <img src={img.wave_yellow} alt="sárga hullám háttér " className="wave-yellow" />
                 <div className="btn-group">
-                    <Link to="#contact" className="btn about-btn">{translations.about.contactButton}<i className="fa-solid fa-arrow-right"></i></Link>
+                    <HashLink to="/#contact" className="btn about-btn">{translations.about.contactButton}<i className="fa-solid fa-arrow-right"></i></HashLink>
                     <a download target="_blank" href={pdf.CV} className="btn-secund" rel="noreferrer">
                         <i className="fa-solid fa-file-arrow-down"></i>{translations.about.cvButton}</a>
                 </div>
