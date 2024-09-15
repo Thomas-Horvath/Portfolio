@@ -25,7 +25,7 @@ const Header = () => {
     const currentHash = location.pathname;
   
 
-    if (currentHash !== '/projects' && !currentHash.startsWith('/info/') && !currentHash.startsWith('/blog/')) {
+    if (!currentHash.startsWith('/projects/')  && !currentHash.startsWith('/info/') && !currentHash.startsWith('/blog/')) {
       // Főoldalon vagyunk, figyeljük a scroll eseményt
       const handleScroll = () => {
         if (window.scrollY > 0) {

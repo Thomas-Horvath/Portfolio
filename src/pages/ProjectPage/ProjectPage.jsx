@@ -1,17 +1,18 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import { img } from '../../assets/assets.js';
 
 
-const ITEMS_PER_PAGE = 6;
+const ITEMS_PER_PAGE = 3;
 
 const ProjectPage = () => {
-  const { translations } = useContext(LanguageContext);
+  const { translations, language } = useContext(LanguageContext);
   const [currentPage, setCurrentPage] = useState(1);
   const [filteredProjects, setFilteredProjects] = useState(translations.projects);
   const [activeCategory, setActiveCategory] = useState('All');
 
- 
+
 
 
   const handleCategoryChange = (category) => {
@@ -20,6 +21,21 @@ const ProjectPage = () => {
   };
 
 
+  const categoryMap = {
+    Webpage: {
+      en: 'Website',
+      hu: 'Weboldal',
+    },
+    Backend: {
+      en: 'Back-end',
+      hu: 'Back-end',
+    },
+    App: {
+      en: 'Application',
+      hu: 'Alkalmazás',
+    },
+  };
+  
 
  
   const handlePageChange = (page) => {
@@ -31,9 +47,10 @@ const ProjectPage = () => {
     if (activeCategory === 'All' || activeCategory === '') {
       setFilteredProjects(translations.projects);
     } else {
-      setFilteredProjects(translations.projects.filter(project => project.type === activeCategory));
+      const selectedCategory = categoryMap[activeCategory][language];
+      setFilteredProjects(translations.projects.filter(project => project.type === selectedCategory));
     }
-  }, [activeCategory, translations.projects]);
+  }, [activeCategory, translations, language]);
 
  
   const paginatedProjects = filteredProjects.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
@@ -45,20 +62,20 @@ const ProjectPage = () => {
 
 
 
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0);
-    return () => clearTimeout(timer);
-  }, [currentPage, filteredProjects]);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     window.scrollTo(0, 0);
+  //   }, 0);
+  //   return () => clearTimeout(timer);
+  // }, [currentPage, filteredProjects]);
 
 
 
 
   return (
-    <section className="portfolio section-link project-page" id="projects" data-observe>
-      <div className="portfolio-wrapper">
+    <section className="portfolio section-link project-page" data-observe>
+    <img src={img.wave_reverse} alt="fekete fordított hullám háttér" className="wave-reverse" />
+      <div className="portfolio-wrapper" id="projects">
         <div className="main-heading">
           <h2>{translations.projectPageContent.headingTitle}</h2>
           <span>{translations.projectPageContent.subHeading}</span>
@@ -66,25 +83,25 @@ const ProjectPage = () => {
         <div className="project-btn-group">
           <button
             className={`btn ${activeCategory === 'All' ? 'select-active' : ''}`}
-            onClick={() => handleCategoryChange(translations.projectPageContent.buttonsAllType)}
+            onClick={() => handleCategoryChange('All')}
           >
             {translations.projectPageContent.buttonsAll}
           </button>
           <button
-            className={`btn ${activeCategory === 'Weboldal'  ? 'select-active' : ''}`}
-            onClick={() => handleCategoryChange(translations.projectPageContent.buttonFrontType)}
+            className={`btn ${activeCategory === 'Webpage'  ? 'select-active' : ''}`}
+            onClick={() => handleCategoryChange('Webpage')}
           >
             {translations.projectPageContent.buttonFront}
           </button>
           <button
-            className={`btn ${activeCategory === 'Back-end' ? 'select-active' : ''}`}
-            onClick={() => handleCategoryChange(translations.projectPageContent.buttonBackType)}
+            className={`btn ${activeCategory === 'Backend' ? 'select-active' : ''}`}
+            onClick={() => handleCategoryChange('Backend')}
           >
             {translations.projectPageContent.buttonBack}
           </button>
           <button
-            className={`btn ${activeCategory === 'Alkalmazás' ? 'select-active' : ''}`}
-            onClick={() => handleCategoryChange(translations.projectPageContent.buttonAppsType)}
+            className={`btn ${activeCategory === 'App' ? 'select-active' : ''}`}
+            onClick={() => handleCategoryChange('App')}
           >
             {translations.projectPageContent.buttonApps}
           </button>
@@ -106,6 +123,7 @@ const ProjectPage = () => {
           ))}
         </div>
       </div>
+      <img src={img.wave} alt="fekete hullám háttér" className="about-wave" />
     </section>
   );
 }

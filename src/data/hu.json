@@ -134,7 +134,12 @@
             "type": "Weboldal",
             "title": "Bőrdíszműves weboldal",
             "cardDescription": "Minta Béla bőrdíszműves portfólió weboldala.",
-            "popupDescription": "Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala.",
+            "popupDescription": [
+                "Minta Béla bőrdíszműves portfólió weboldala.",
+                "Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala.",
+                "Minta Béla bőrdíszműves portfólió weboldala.",
+                "Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala "
+            ],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -154,7 +159,7 @@
             "type": "Weboldal",
             "title": "Gipsz Jakab portfólió oldala",
             "cardDescription": "Gipsz Jakab frontend webfejlesztő portfólió weboldala",
-            "popupDescription": "Gipsz Jakab frontend webfejlesztő portfólió weboldala",
+            "popupDescription": ["Gipsz Jakab frontend webfejlesztő portfólió weboldala"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -174,7 +179,7 @@
             "type": "Back-end",
             "title": "Példa projekt 3",
             "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
-            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája.3",
+            "popupDescription": ["Ez a projekt kártyák megjelenítésének a mintája.3"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -197,7 +202,7 @@
             "type": "Back-end",
             "title": "Példa projekt 4",
             "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
-            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája. 4",
+            "popupDescription":[ "Ez a projekt kártyák megjelenítésének a mintája. 4"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -218,7 +223,7 @@
             "type": "Alkalmazás",
             "title": "Példa projekt 5",
             "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
-            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája.5",
+            "popupDescription":[ "Ez a projekt kártyák megjelenítésének a mintája. 4"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -239,7 +244,7 @@
             "type": "Weboldal",
             "title": "Példa projekt 6",
             "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
-            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája. 6",
+            "popupDescription":[ "Ez a projekt kártyák megjelenítésének a mintája. 4"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -260,7 +265,7 @@
             "type": "Back-end",
             "title": "Példa projekt 7",
             "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
-            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája. 7",
+            "popupDescription":[ "Ez a projekt kártyák megjelenítésének a mintája. 4"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -281,7 +286,7 @@
             "type": "Weboldal",
             "title": "Példa projekt 8",
             "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
-            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája. 8",
+            "popupDescription":[ "Ez a projekt kártyák megjelenítésének a mintája. 4"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -302,7 +307,7 @@
             "type": "Alkalmazás",
             "title": "Példa projekt 9",
             "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
-            "popupDescription": "Ez a projekt kártyák megjelenítésének a mintája.9",
+            "popupDescription":[ "Ez a projekt kártyák megjelenítésének a mintája. 4"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -327,9 +332,9 @@
         "buttonBack": "Back-end",
         "buttonApps": "Alkalmazások",
         "buttonsAllType": "All",
-        "buttonFrontType": "Weboldal",
+        "buttonFrontType": "Webpage",
         "buttonBackType": "Back-end",
-        "buttonAppsType": "Alkalmazás"
+        "buttonAppsType": "App"
     },
     "projectCard": {
         "buttonDetails": "Részletek"

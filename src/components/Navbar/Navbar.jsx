@@ -68,13 +68,13 @@ const Navbar = ({ isOpen, toggleMenu }) => {
           </HashLink>
         </li>
         <li>
-          <Link
-            className={`nav-link ${isActive(['/projects', '#projects']) ? 'active' : ''}`}
-            to="/projects"
+          <HashLink
+            className={`nav-link ${isActive('#projects') ? 'active' : ''}`}
+            to="/#projects"
             onClick={toggleMenu}
           >
             {translations.nav.link4}
-          </Link>
+          </HashLink>
         </li>
         <li>
           <HashLink

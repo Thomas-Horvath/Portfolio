@@ -52,9 +52,12 @@
 /* portfolio cards */
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
     /* Két oszlopos grid */
+
+    display: flex;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
     max-width: 1400px;
@@ -71,7 +74,7 @@
     justify-content: center;
     box-shadow: 0 8px 20px rgba(212, 212, 212, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease;
-    max-width: 100%;
+    max-width: 420px;
     border: 2px solid #eee;
 
     &:hover {

@@ -134,7 +134,12 @@
             "type": "Website",
             "title": "Leather Craftsman Website",
             "cardDescription": "Sample Béla's leather craftsman portfolio website.",
-            "popupDescription": "Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website. Sample Béla's leather craftsman portfolio website.",
+            "popupDescription": [
+                "Sample Béla's leather craftsman portfolio website.",
+                "Sample Béla's leather craftsman portfolio website.Sample Béla's leather craftsman portfolio website.",
+                "Sample Béla's leather craftsman portfolio website.",
+                "Sample Béla's leather craftsman portfolio website.Sample Béla's leather craftsman portfolio website."
+            ],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -154,7 +159,7 @@
             "type": "Website",
             "title": "Gipsz Jakab Portfolio Page",
             "cardDescription": "Gipsz Jakab frontend web developer portfolio website.",
-            "popupDescription": "Gipsz Jakab frontend web developer portfolio website.",
+            "popupDescription":[ "Gipsz Jakab frontend web developer portfolio website."],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -165,7 +170,7 @@
             "githubLink": "https://github.com/Thomas-Horvath/PK_project1_porfolio_html_css-",
             "githubPagesLink": "https://thomas-horvath.github.io/PK_project1_porfolio_html_css-/",
             "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
+            "popupDescriptionTitle": ["Project Description:"],
             "popupTehnologies": "Technologies Used:",
             "popupProjectType": "Project Type:"
         },
@@ -174,7 +179,7 @@
             "type": "Back-end",
             "title": "Sample Project 3",
             "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": "This project is a template for displaying cards.3",
+            "popupDescription": ["This project is a template for displaying cards.3"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -189,7 +194,7 @@
             "githubPagesLink": "https://github.com/",
             "buttonContent": "Details",
             "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
+            "popupTehnologies":[ "Technologies Used:"],
             "popupProjectType": "Project Type:"
         },
         {
@@ -197,7 +202,7 @@
             "type": "Back-end",
             "title": "Sample Project 4",
             "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": "This project is a template for displaying cards. 4",
+            "popupDescription": ["This project is a template for displaying cards. 4"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -218,7 +223,7 @@
             "type": "Application",
             "title": "Sample Project 5",
             "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": "This project is a template for displaying cards.5",
+            "popupDescription": ["This project is a template for displaying cards. 5"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -239,7 +244,7 @@
             "type": "Website",
             "title": "Sample Project 6",
             "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": "This project is a template for displaying cards. 6",
+            "popupDescription": ["This project is a template for displaying cards. 6"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -260,7 +265,7 @@
             "type": "Back-end",
             "title": "Sample Project 7",
             "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": "This project is a template for displaying cards. 7",
+            "popupDescription": ["This project is a template for displaying cards. 7"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -281,7 +286,7 @@
             "type": "Website",
             "title": "Sample Project 8",
             "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": "This project is a template for displaying cards. 8",
+            "popupDescription": ["This project is a template for displaying cards. 8"],
             "technologies": [
                 "HTML",
                 "CSS",
@@ -302,7 +307,7 @@
             "type": "Application",
             "title": "Sample Project 9",
             "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": "This project is a template for displaying cards.9",
+            "popupDescription": ["This project is a template for displaying cards. 9"],
             "technologies": [
                 "HTML",
                 "CSS",

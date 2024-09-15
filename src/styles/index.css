@@ -190,7 +190,7 @@ section {
   font-family: "Poppins-regular", sans-serif;
   font-weight: 400;
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
@@ -199,6 +199,7 @@ section {
   color: rgba(245, 179, 47, 0.7490196078);
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-shadow: 2px 2px 8px #111;
 }
 
 .header {
@@ -817,9 +818,9 @@ section {
 
 /* portfolio cards */
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   /* Két oszlopos grid */
+  display: flex;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
   max-width: 1400px;
@@ -835,7 +836,7 @@ section {
   justify-content: center;
   box-shadow: 0 8px 20px rgba(212, 212, 212, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease;
-  max-width: 100%;
+  max-width: 420px;
   border: 2px solid #eee;
 }
 .project-card:hover {

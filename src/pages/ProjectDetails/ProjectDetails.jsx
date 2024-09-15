@@ -1,4 +1,4 @@
-import React, { useContext} from 'react';
+import React, { useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import BackButton from '../../components/BackButton/BackButton';
@@ -8,7 +8,7 @@ const ProjectDetail = () => {
     const { translations } = useContext(LanguageContext);
     const { id } = useParams();
     const project = translations.projects.find(p => p.id === Number(id));
-
+    let content = project.popupDescription;
 
     if (!project) return <p>Project not found</p>;
 
@@ -22,7 +22,10 @@ const ProjectDetail = () => {
                     <div className="project-info">
                         <h1>{project.title}</h1>
                         <div className="p-container">
-                            <p><strong>{project.popupDescriptionTitle}</strong> {project.popupDescription}</p>
+                            <p><strong>{project.popupDescriptionTitle}</strong>  </p>
+                            {content.map((item, index) => (
+                                <p key={index}>{item}</p>
+                            ))}
                             <p><strong>{project.popupTehnologies}</strong> {project.technologies.join(', ')}</p>
                             <p><strong>{project.popupProjectType}</strong> {project.type}</p>
                         </div>
