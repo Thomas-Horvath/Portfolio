@@ -142,7 +142,7 @@ const Skills = () => {
           <h2>{translations.skills.frontEndTitle}</h2>
           <div className="skills-icon-container">
             {translations.skills.frontEndSkills.map((skill) => (
-              <div key={skill.name} className="skill-container">
+              <div key={skill.name} className="skill-icon-container">
                 <img src={icons[skill.icon]} alt={`${skill.name} logo`} />
                 <p>{skill.name}</p>
               </div>
@@ -154,7 +154,7 @@ const Skills = () => {
           <h2>{translations.skills.backEndTitle}</h2>
           <div className="skills-icon-container">
             {translations.skills.backEndSkills.map((skill) => (
-              <div key={skill.name} className="skill-container">
+              <div key={skill.name} className="skill-icon-container">
                 <img src={icons[skill.icon]} alt={`${skill.name} logo`} />
                 <p>{skill.name}</p>
               </div>
@@ -166,7 +166,7 @@ const Skills = () => {
           <h2>{translations.skills.databaseTitle}</h2>
           <div className="skills-icon-container">
             {translations.skills.databaseSkills.map((skill) => (
-              <div key={skill.name} className="skill-container">
+              <div key={skill.name} className="skill-icon-container">
                 <img src={icons[skill.icon]} alt={`${skill.name} logo`} />
                 <p>{skill.name}</p>
               </div>
@@ -178,7 +178,7 @@ const Skills = () => {
           <h2>{translations.skills.otherTitle}</h2>
           <div className="skills-icon-container">
             {translations.skills.otherSkills.map((skill) => (
-              <div key={skill.name} className="skill-container">
+              <div key={skill.name} className="skill-icon-container">
                 <img src={icons[skill.icon]} alt={`${skill.name} logo`} />
                 <p>{skill.name}</p>
               </div>

@@ -6,23 +6,28 @@ import flagEn from '../../assets/img/great-britain-flag.png';
 const LanguageSelector = () => {
   const { language, switchLanguage } = useContext(LanguageContext);
 
+ 
+
   return (
+
     <div className="language-selector">
-      {language === 'hu' ? (
+      <div className="language-icon"
+        onClick={() => switchLanguage('hu')}>
         <img
-          src={flagEn}
-          alt="Angol zászló"
-          onClick={() => switchLanguage('en')}
-          style={{ cursor: 'pointer', opacity: 1 }}
-        />
-      ) : (
-        <img
+          className={language === 'hu' ? 'language-active' : ''}
           src={flagHu}
           alt="Magyar zászló"
-          onClick={() => switchLanguage('hu')}
-          style={{ cursor: 'pointer', opacity: 1 }}
         />
-      )}
+      </div>
+      <div className="language-icon"
+        onClick={() => switchLanguage('en')}>
+        <img
+          className={language === 'en' ? 'language-active' : ''}
+          src={flagEn}
+          alt="Angol zászló"
+        />
+      </div>
+
     </div>
   );
 };

@@ -12,7 +12,7 @@
         "profession1": "Full-Stack web developer,",
         "profession2": "Database specialist",
         "subTitle": "Code beauty, create an experience!",
-        "buttonText": "Send a message!"
+        "buttonText": "Contact me!"
     },
     "about": {
         "headingTitle": "Some words",
@@ -68,6 +68,10 @@
             {
                 "name": "Bootstrap",
                 "icon": "bootstrapIcon"
+            },
+            {
+                "name": "Angular",
+                "icon": "angular"
             }
         ],
         "backEndTitle": "Back-End",
@@ -128,213 +132,17 @@
             }
         ]
     },
-    "projects": [
-        {
-            "id": 1,
-            "type": "Website",
-            "title": "Leather Craftsman Website",
-            "cardDescription": "Sample Béla's leather craftsman portfolio website.",
-            "popupDescription": [
-                "Sample Béla's leather craftsman portfolio website.",
-                "Sample Béla's leather craftsman portfolio website.Sample Béla's leather craftsman portfolio website.",
-                "Sample Béla's leather craftsman portfolio website.",
-                "Sample Béla's leather craftsman portfolio website.Sample Béla's leather craftsman portfolio website."
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ],
-            "imageSrc": "/project_img/leadherShop.webp",
-            "imageAlt": "Leather craftsman project image",
-            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
-            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 2,
-            "type": "Website",
-            "title": "Gipsz Jakab Portfolio Page",
-            "cardDescription": "Gipsz Jakab frontend web developer portfolio website.",
-            "popupDescription":[ "Gipsz Jakab frontend web developer portfolio website."],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ],
-            "imageSrc": "/project_img/gipsz.webp",
-            "imageAlt": "Gipsz Jakab project image",
-            "githubLink": "https://github.com/Thomas-Horvath/PK_project1_porfolio_html_css-",
-            "githubPagesLink": "https://thomas-horvath.github.io/PK_project1_porfolio_html_css-/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": ["Project Description:"],
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 3,
-            "type": "Back-end",
-            "title": "Sample Project 3",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": ["This project is a template for displaying cards.3"],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React",
-                "Sass",
-                "Bootstrap"
-            ],
-            "imageSrc": "/project_img/project.webp",
-            "imageAlt": "Sample Project 3 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies":[ "Technologies Used:"],
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 4,
-            "type": "Back-end",
-            "title": "Sample Project 4",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": ["This project is a template for displaying cards. 4"],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project.webp",
-            "imageAlt": "Sample Project 4 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 5,
-            "type": "Application",
-            "title": "Sample Project 5",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": ["This project is a template for displaying cards. 5"],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project.webp",
-            "imageAlt": "Sample Project 5 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 6,
-            "type": "Website",
-            "title": "Sample Project 6",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": ["This project is a template for displaying cards. 6"],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project.webp",
-            "imageAlt": "Sample Project 6 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 7,
-            "type": "Back-end",
-            "title": "Sample Project 7",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": ["This project is a template for displaying cards. 7"],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project.webp",
-            "imageAlt": "Sample Project 7 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 8,
-            "type": "Website",
-            "title": "Sample Project 8",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": ["This project is a template for displaying cards. 8"],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project.webp",
-            "imageAlt": "Sample Project 8 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 9,
-            "type": "Application",
-            "title": "Sample Project 9",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": ["This project is a template for displaying cards. 9"],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project.webp",
-            "imageAlt": "Sample Project 9 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        }
-    ],
     "projectPageContent": {
         "headingTitle": "Portfolio",
         "subHeading": "My Work So Far",
         "buttonsAll": "All",
         "buttonFront": "Front-end",
         "buttonBack": "Back-end",
-        "buttonApps": "Applications",
+        "buttonApps": "Databases",
         "buttonsAllType": "All",
         "buttonFrontType": "Website",
         "buttonBackType": "Back-end",
-        "buttonAppsType": "Application"
+        "buttonAppsType": "Data"
     },
     "projectCard": {
         "buttonDetails": "Details"
@@ -388,14 +196,12 @@
             {
                 "icon": "fa-solid fa-square-phone",
                 "title": "Phone",
-                "subtitle": "+36 30 123 4567",
-                "link": "tel:+36301234567"
+                "subtitle": "+36 30 123 4567"
             },
             {
                 "icon": "fa-solid fa-envelope",
                 "title": "Email",
-                "subtitle": "thomashorvathweb@gmail.hu",
-                "link": "mailto:template@template.com"
+                "subtitle": "thomashorvathweb@gmail.hu"
             },
             {
                 "icon": "fa-solid fa-location-dot",
@@ -419,5 +225,417 @@
         "impressum": "Impress",
         "cookies": "Cookie Management",
         "additionalText": "All rights reserved!"
-    }
+    },
+    "blogpage": {
+        "blog1": {
+            "title1": "1. HTML in Practice",
+            "content1": [
+                "Let's start by understanding what the HTML language is.",
+                "HTML (HyperText Markup Language) is one of the core technologies that defines how websites are built. HTML is not a programming language, but a markup language that describes the structure and content of a web page. Elements like headings, paragraphs, images, or links are defined using HTML tags.",
+                "HTML was created by Tim Berners-Lee in the early 1990s to allow the sharing and linking of information through the internet. Since then, HTML has evolved and expanded to support the needs of modern web, such as displaying multimedia content and creating interactive elements.",
+                "The basics of HTML include that every webpage is actually a document made up of elements. These elements can be text blocks, images, links, or embedded media files. Each element is surrounded by an opening and closing tag, which defines its role and appearance in the browser."
+            ],
+            "example": {
+                "title": "For example:",
+                "example1": "<h1>Heading</h1>",
+                "example2": "<p>This is a paragraph.</p>",
+                "explanation": "The example above defines a heading and a paragraph. However, HTML is much more than that, and you can use countless other elements to build a webpage."
+            },
+            "title2": "Why is HTML Important?",
+            "content2": [
+                "HTML is the foundation of every website. Everything you see on the internet is defined using HTML, including text, images, and interactive elements. In today's world of more interactive and visually rich pages, HTML remains essential as it provides the basic structure for web pages."
+            ],
+            "title3": "HTML in Modern Web Development",
+            "content3": [
+                "Today, HTML alone is not enough to create a complete website. CSS (Cascading Style Sheets) is needed to define the styles, while JavaScript adds interactivity for dynamic behavior. However, HTML remains the language that defines the structure of the webpage, and without it, modern web development would not exist.",
+                "Due to its simplicity and flexibility, HTML is still one of the most important technologies in every web developer's toolkit."
+            ]
+        },
+        "blog2": {
+            "title1": "2. The Magic of CSS",
+            "content1": [
+                "Let's start by explaining what CSS is.",
+                "CSS (Cascading Style Sheets) is a styling language that is used to design the appearance of web pages. While HTML defines the structure of a web page, CSS is responsible for the visual aspects, like colors, fonts, layouts, and animations.",
+                "CSS separates the content of a webpage from its design, making it easier for developers to change the layout without modifying the HTML structure. This is very useful when managing large websites or creating reusable design templates.",
+                "CSS is made up of rules that apply to different elements. A rule usually targets an element (like a paragraph or a heading) and defines its visual properties, such as color, size, or position on the page."
+            ],
+            "example": {
+                "title": "For example:",
+                "example1": "p { color: red; }",
+                "example2": "h1 { font-size: 24px; }",
+                "explanation": "The first example changes the text color of a paragraph to red, while the second example sets the font size of a heading to 24 pixels. CSS allows precise control over the appearance of web pages."
+            },
+            "title2": "Why is CSS important?",
+            "content2": [
+                "CSS is essential for designing the look and feel of websites. It allows developers to create customized layouts and visually appealing designs. Most modern websites use CSS to control their layout and style."
+            ],
+            "title3": "CSS in modern web development",
+            "content3": [
+                "CSS is one of the most important tools for web developers. There are many frameworks and predefined style sheets that make it easier to work with CSS. Its flexibility allows developers to change the appearance of a website without altering the HTML structure."
+            ]
+        },
+        "blog3": {
+            "title1": "3. JavaScript",
+            "content1": [
+                "Let's start by explaining what JavaScript is.",
+                "JavaScript is a programming language that brings dynamic interactivity to websites. While HTML defines the structure and CSS handles the design, JavaScript allows websites to react to user actions, like clicks, form submissions, or animations.",
+                "JavaScript runs in the browser and directly interacts with the HTML and CSS elements of a page. This makes it possible to update the content of a page in real-time without refreshing it.",
+                "In modern web development, JavaScript plays a key role. It allows the creation of complex web applications, games, and interactive tools that enhance user experience."
+            ],
+            "example": {
+                "title": "For example:",
+                "example1": "document.getElementById( 'myButton').addEventListener( 'click', function() { alert('Hello World!'); });",
+                "explanation": "The example adds a click event to a button that shows the message 'Hello World!'. JavaScript makes it easy to add interactive features to web pages."
+            },
+            "title2": "Why is JavaScript important?",
+            "content2": [
+                "JavaScript is one of the most popular languages in web development. It allows the creation of dynamic and interactive websites that respond to user needs. Most modern web applications are built using JavaScript."
+            ],
+            "title3": "JavaScript in modern web development",
+            "content3": [
+                "Nowadays, it's almost impossible to imagine a modern website without JavaScript. Many frameworks and libraries, like React or Vue.js, extend the capabilities of JavaScript and make it easier to build complex features."
+            ]
+        },
+        "blog4": {
+            "title1": "4. Protect Your Data",
+            "content1": [
+                "Why is data protection important in the digital age?",
+                "In the digital age, data protection is becoming more and more important. During our online activities, we share a lot of information that can be sensitive. This data can range from personal information to browsing habits and even financial data.",
+                "Cybercrime is a growing threat to users. Hackers constantly develop new ways to steal personal information and use it for fraud or identity theft.",
+                "That's why it's important to handle your data carefully online. Make sure to use strong passwords and avoid suspicious links or unknown websites. Being aware of data protection can reduce risks and keep you safe from the dangers of the digital world."
+            ],
+            "example": {
+                "title": "Tips for data protection:",
+                "example1": "- Use strong and unique passwords for all your accounts.",
+                "example2": "- Don't click on suspicious links or email attachments.",
+                "explanation": "To protect your data, it's important to manage your online accounts and information securely. Strong passwords and caution are key to defending against cybercrime."
+            },
+            "title2": "Why is data protection important?",
+            "content2": [
+                "Data protection concerns everyone, and it's crucial for keeping personal information safe. With the increasing number of online threats, it's important to be aware of how to protect your data."
+            ],
+            "title3": "Data protection in the modern world",
+            "content3": [
+                "As the digital world evolves, we need to focus more on data protection. Our personal information is constantly at risk during online activities, so it's essential to take security measures, like using two-factor authentication and trusted antivirus software."
+            ]
+        }
+    },
+    "policy": {
+        "main_title": "Privacy Policy",
+        "wrapper_content": [
+            {
+                "title": "1. Data Protection and Security",
+                "content": "We treat your customer data as strictly confidential and take all necessary measures to protect it. Only those employees who are explicitly authorized and need access to the data for their work can access it. We conduct regular data security audits to prevent unauthorized access and security incidents."
+            },
+            {
+                "title": "2. Data Collection and Use",
+                "content": "We collect and use customer data solely for fair and lawful purposes. The data is used exclusively to maintain relationships with customers and to improve and enhance our services. We do not sell or disclose customer data to third parties without permission."
+            },
+            {
+                "title": "3. User Rights",
+                "content": "Our customers have the right to access their personal data provided to us and may request its correction or deletion if necessary. If our customers wish to express their preferences regarding data management, please contact us using the details below."
+            },
+            {
+                "title": "4. Privacy Notice and Review",
+                "content": "We regularly update our privacy policy to comply with legal requirements and meet customer expectations. We notify our customers of any changes, and all new data protection measures are reviewed and approved in advance."
+            }
+        ]
+    },
+    "impressum": {
+        "main_title": "Imprint",
+        "page_owner": {
+            "title": "Website Operator Details",
+            "name": "Name:",
+            "address": "Address:",
+            "phone": "Phone number:",
+            "email": "Email address:"
+        },
+        "hosting_provider": {
+            "title": "Hosting Provider Details",
+            "company_name": "Company name:",
+            "company_address": "Company address:",
+            "branch_office": "Branch office:",
+            "website": "Website:",
+            "contact_page": "Contact page:"
+        }
+    },
+    "cookiesSection": {
+        "title": "Cookie Management",
+        "content": {
+            "introduction": {
+                "text": "When you access my portfolio website, the site may automatically save information from your computer or the device used for browsing (tablet, smartphone). For this purpose, so-called computer 'cookies' are used."
+            },
+            "whatIsCookie": {
+                "title": "What is a cookie?",
+                "text": "A cookie is a small piece of text that the visited website sends to your browser. It allows the site to remember information about your visit, such as the language you used and other settings. This makes your next visit smoother and easier to use. Cookies play an important role; without them, using the internet would be much more cumbersome."
+            },
+            "cookiesPurpose": {
+                "title": "What types of cookies do we use and for what purpose?",
+                "types": [
+                    {
+                        "type": "PERMANENT OR TEMPORARY COOKIES",
+                        "text": "Our website uses so-called 'temporary cookies' (session cookies) and 'permanent cookies'. Temporary cookies remain on your computer until you leave the website, while permanent cookies stay on your device for a longer period (depending on your browser settings), or until you manually delete them."
+                    },
+                    {
+                        "type": "SESSION COOKIES",
+                        "text": "These are temporary cookies that are only stored for the duration of your visit. They are automatically deleted from your computer at the end of your session or when you close your browser. Session cookies are essential for navigating our website and ensuring its proper functionality. They do not collect any information that could identify you personally."
+                    },
+                    {
+                        "type": "PERFORMANCE COOKIES (ANALYTICS)",
+                        "text": "We use Google Analytics cookies to gather information about the behavior and characteristics of our visitors. This helps us make our website clearer and easier to use. These cookies do not personally identify you, for instance, we do not store your name or email address; data is collected and stored anonymously and in aggregate. Even the IP address is only partially recorded.",
+                        "link_title": "More information:",
+                        "link": "On this page."
+                    },
+                    {
+                        "type": "FUNCTIONAL COOKIES",
+                        "text": "These cookies allow us to remember your choices on our website (e.g., the data entered on forms, etc.). These cookies track your activity solely on the visited website and not on others. They may store personal data you have provided, such as your email address."
+                    },
+                    {
+                        "type": "THIRD-PARTY COOKIES",
+                        "text": "We may use external web services on our website provided by third parties. In such cases, the storage of cookies is not controlled by us, and we have no influence over what information these external providers collect.",
+                        "link_title": "You can find out about the types of cookies used by Google",
+                        "link": "HERE",
+                        "link_end": "."
+                    }
+                ]
+            },
+            "cookieManagement": {
+                "title": "Cookie management, control, and disabling",
+                "consentWithdrawal": {
+                    "title": "How to withdraw consent?",
+                    "text": "Consent validity may expire occasionally. However, if you wish to withdraw your consent, you can do so at any time through your browser's cookie settings."
+                },
+                "browserSettings": {
+                    "title": "Browser Settings",
+                    "text": "These cookies do not store personal data, such as your name, address, or payment information. If you still wish to disable, block, or delete cookies from my site, you can do so using your browser. You can find the cookie settings for major browsers here:"
+                }
+            },
+            "googleAnalyticsDisable": {
+                "title": "DISABLING ANONYMOUS GOOGLE ANALYTICS COOKIES",
+                "text": "To prevent Google Analytics cookies from collecting information about you, you need to install a browser extension (Google Analytics plug-in).",
+                "additionalInfo": {
+                    "description": "Further information can be found at the following links:",
+                    "links": {
+                        "text1": "Cookies can also be disabled in Google services, on the Google Ads Opt-out page:",
+                        "text2": "Google information stored on your device can be managed at the following page:",
+                        "text3": "You can read more about 'Google Privacy and Security' here:"
+                    }
+                }
+            }
+        }
+    },
+    "projects": [
+        {
+            "id": 1,
+            "type": "Website",
+            "title": "Leather Craftsman Website",
+            "cardDescription": "Sample Béla's leather craftsman portfolio website.",
+            "popupDescription": [
+                "Sample Béla's leather craftsman portfolio website.",
+                "Sample Béla's leather craftsman portfolio website.Sample Béla's leather craftsman portfolio website.",
+                "Sample Béla's leather craftsman portfolio website.",
+                "Sample Béla's leather craftsman portfolio website.Sample Béla's leather craftsman portfolio website."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/1.png",
+            "imageAlt": "Leather craftsman project image",
+            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
+            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 2,
+            "type": "Website",
+            "title": "Gipsz Jakab Portfolio Page",
+            "cardDescription": "Gipsz Jakab frontend web developer portfolio website.",
+            "popupDescription": [
+                "Gipsz Jakab frontend web developer portfolio website."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/2.png",
+            "imageAlt": "Gipsz Jakab project image",
+            "githubLink": "https://github.com/Thomas-Horvath/PK_project1_porfolio_html_css-",
+            "githubPagesLink": "https://thomas-horvath.github.io/PK_project1_porfolio_html_css-/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": [
+                "Project Description:"
+            ],
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 3,
+            "type": "Back-end",
+            "title": "Sample Project 3",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": [
+                "This project is a template for displaying cards.3"
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React",
+                "Sass",
+                "Bootstrap"
+            ],
+            "imageSrc": "/project_img/server.png",
+            "imageAlt": "Sample Project 3 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": [
+                "Technologies Used:"
+            ],
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 4,
+            "type": "Back-end",
+            "title": "Sample Project 4",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": [
+                "This project is a template for displaying cards. 4"
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/server.png",
+            "imageAlt": "Sample Project 4 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 5,
+            "type": "Database",
+            "title": "Ms Sql webshop database",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": [
+                "This project is a template for displaying cards. 5"
+            ],
+            "technologies": [
+                "MS SQL Server",
+                "SQL"
+            ],
+            "imageSrc": "/project_img/ElectricGuitarShop.png",
+            "imageAlt": "Sample Project 5 image",
+            "downloadDocs_title": "Download the documentation",
+            "docsHref": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 6,
+            "type": "Website",
+            "title": "Sample Project 6",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": [
+                "This project is a template for displaying cards. 6"
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/3.png",
+            "imageAlt": "Sample Project 6 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 7,
+            "type": "Back-end",
+            "title": "Sample Project 7",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": [
+                "This project is a template for displaying cards. 7"
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/server.png",
+            "imageAlt": "Sample Project 7 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 8,
+            "type": "Website",
+            "title": "Sample Project 8",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": [
+                "This project is a template for displaying cards. 8"
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/3.png",
+            "imageAlt": "Sample Project 8 image",
+            "githubLink": "https://github.com/",
+            "githubPagesLink": "https://github.com/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 9,
+            "type": "Database",
+            "title": "MongoDb webshop database",
+            "cardDescription": "This project is a template for displaying cards.",
+            "popupDescription": [
+                "This project is a template for displaying cards. 9"
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/mongodb_database.png",
+            "imageAlt": "Sample Project 9 image",
+            "downloadDocs_title": "Download the documentation",
+            "docsHref": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTehnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        }
+    ]
 }

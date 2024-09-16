@@ -3,7 +3,6 @@
 /*  css reset  */
 html {
     box-sizing: border-box;
-    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -11,7 +10,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    user-select: none;
     text-decoration: none;
     list-style: none;
 }
@@ -72,8 +70,13 @@ img {
 
 .back-btn {
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.back-btn.btn {
+    gap: .3rem;
+} 
 .btn:hover {
     color: $main-color;
     border: 2px solid $main-color;
@@ -157,7 +160,7 @@ section {
 }
 
 
-
+@import 'language_selector';
 @import 'mainHeading';
 @import 'header';
 @import 'home';
@@ -165,7 +168,7 @@ section {
 @import 'aboutInfo';
 @import 'quote';
 @import 'skills';
-@import 'portfolio';
+@import 'projects';
 @import 'blog';
 @import 'contact';
 @import 'footer';

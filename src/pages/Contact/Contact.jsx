@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect, useContext } from 'react';
-import { Link } from 'react-router-dom';
-import emailjs from '@emailjs/browser'; // Győződj meg róla, hogy telepítetted az emailjs-com csomagot
+import emailjs from '@emailjs/browser';
 import { LanguageContext } from '../../contexts/LanguageContext';
 
 const Contact = () => {
@@ -75,19 +74,10 @@ const Contact = () => {
                 <div className="icon-container">
                   <i className={item.icon}></i>
                 </div>
-                {item.link ? (
-                  <Link to={item.link}>
-                    <div className="contact-group">
-                      <p className="contact-title">{item.title}</p>
-                      <p className="contact-subtitle">{item.subtitle}</p>
-                    </div>
-                  </Link>
-                ) : (
                   <div className="contact-group">
                     <p className="contact-title">{item.title}</p>
                     <p className="contact-subtitle">{item.subtitle}</p>
                   </div>
-                )}
               </div>
             ))}
           </div>

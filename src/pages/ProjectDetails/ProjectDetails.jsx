@@ -2,6 +2,9 @@ import React, { useContext } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import BackButton from '../../components/BackButton/BackButton';
+import { FaGithub } from "react-icons/fa6";
+import { MdOutlineLiveTv } from "react-icons/md";
+import { FaFileDownload } from "react-icons/fa";
 
 
 const ProjectDetail = () => {
@@ -30,12 +33,25 @@ const ProjectDetail = () => {
                             <p><strong>{project.popupProjectType}</strong> {project.type}</p>
                         </div>
                         <div className="project-links">
-                            <Link to={project.githubLink} target="_blank" rel="noreferrer" className="btn">
-                                GitHub
-                            </Link>
-                            <Link to={project.githubPagesLink} target="_blank" rel="noreferrer" className="btn">
-                                Live Demo
-                            </Link>
+
+                            {project.githubLink && project.githubPagesLink ? (
+                                <>
+                                    <Link to={project.githubLink} target="_blank" rel="noreferrer" className="btn">
+                                        <FaGithub /> GitHub
+                                    </Link>
+                                    <Link to={project.githubPagesLink} target="_blank" rel="noreferrer" className="btn">
+                                        <MdOutlineLiveTv /> Live Demo
+                                    </Link>
+                                </>
+                            ) : (
+                                project.downloadDocs_title && (
+                                    <a download target="_blank" href={`${process.env.PUBLIC_URL}${project.docsHref}`}  rel="noreferrer" className="btn">
+                                        <FaFileDownload /> {project.downloadDocs_title}
+                                    </a>
+                                )
+                            )}
+
+
                         </div>
                     </div>
                 </div>

@@ -47,7 +47,7 @@
     position: relative;
     z-index: 2;
     border-radius: .25rem;
-    
+    box-shadow: $box-shadow-dirk;
 }
 
 .about-left img {
@@ -70,6 +70,7 @@
     z-index: 0;
     top: -30px;
     left: -30px;
+    box-shadow: $box-shadow-dirk;
 }
 
 .about-img::before {
@@ -83,6 +84,7 @@
     z-index: 0;
     bottom: -30px;
     right: -30px;
+    box-shadow: $box-shadow-dirk;
 }
 
 .about-right {

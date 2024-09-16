@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
-import { img } from '../../assets/assets.js';
+import { img, categoryMap } from '../../assets/assets.js';
 
 
 const ITEMS_PER_PAGE = 3;
@@ -13,31 +13,26 @@ const ProjectPage = () => {
   const [activeCategory, setActiveCategory] = useState('All');
 
 
+  useEffect(() => {
+    // Betölteni a kiválasztott kategóriát a localStorage-ból
+    const savedCategory = localStorage.getItem('selectedCategory');
+    if (savedCategory) {
+      setActiveCategory(savedCategory);
+    }
+  }, []);
 
 
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
-    setCurrentPage(1); 
+    setCurrentPage(1);
+    localStorage.setItem('selectedCategory', category);
   };
 
 
-  const categoryMap = {
-    Webpage: {
-      en: 'Website',
-      hu: 'Weboldal',
-    },
-    Backend: {
-      en: 'Back-end',
-      hu: 'Back-end',
-    },
-    App: {
-      en: 'Application',
-      hu: 'Alkalmazás',
-    },
-  };
-  
 
- 
+
+
+
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
@@ -45,14 +40,16 @@ const ProjectPage = () => {
   // categória szerinti szűrés
   useEffect(() => {
     if (activeCategory === 'All' || activeCategory === '') {
-      setFilteredProjects(translations.projects);
+      // Véletlenszerű sorrendezés, ha az összes projektet szeretnéd megjeleníteni
+      const shuffledProjects = [...translations.projects].sort(() => Math.random() - 0.5);
+      setFilteredProjects(shuffledProjects);
     } else {
       const selectedCategory = categoryMap[activeCategory][language];
       setFilteredProjects(translations.projects.filter(project => project.type === selectedCategory));
     }
   }, [activeCategory, translations, language]);
 
- 
+
   const paginatedProjects = filteredProjects.slice((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE);
 
 
@@ -61,20 +58,9 @@ const ProjectPage = () => {
 
 
 
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     window.scrollTo(0, 0);
-  //   }, 0);
-  //   return () => clearTimeout(timer);
-  // }, [currentPage, filteredProjects]);
-
-
-
-
   return (
     <section className="portfolio section-link project-page" data-observe>
-    <img src={img.wave_reverse} alt="fekete fordított hullám háttér" className="wave-reverse" />
+      <img src={img.wave_reverse} alt="fekete fordított hullám háttér" className="wave-reverse" />
       <div className="portfolio-wrapper" id="projects">
         <div className="main-heading">
           <h2>{translations.projectPageContent.headingTitle}</h2>
@@ -82,26 +68,26 @@ const ProjectPage = () => {
         </div>
         <div className="project-btn-group">
           <button
-            className={`btn ${activeCategory === 'All' ? 'select-active' : ''}`}
+            className={`btn project-select-btn ${activeCategory === 'All' ? 'select-active' : ''}`}
             onClick={() => handleCategoryChange('All')}
           >
             {translations.projectPageContent.buttonsAll}
           </button>
           <button
-            className={`btn ${activeCategory === 'Webpage'  ? 'select-active' : ''}`}
+            className={`btn project-select-btn ${activeCategory === 'Webpage' ? 'select-active' : ''}`}
             onClick={() => handleCategoryChange('Webpage')}
           >
             {translations.projectPageContent.buttonFront}
           </button>
           <button
-            className={`btn ${activeCategory === 'Backend' ? 'select-active' : ''}`}
+            className={`btn project-select-btn ${activeCategory === 'Backend' ? 'select-active' : ''}`}
             onClick={() => handleCategoryChange('Backend')}
           >
             {translations.projectPageContent.buttonBack}
           </button>
           <button
-            className={`btn ${activeCategory === 'App' ? 'select-active' : ''}`}
-            onClick={() => handleCategoryChange('App')}
+            className={`btn project-select-btn ${activeCategory === 'Data' ? 'select-active' : ''}`}
+            onClick={() => handleCategoryChange('Data')}
           >
             {translations.projectPageContent.buttonApps}
           </button>

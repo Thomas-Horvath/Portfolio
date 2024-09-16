@@ -28,7 +28,7 @@ const Blog = () => {
                             slidesPerView={1}
                             cssMode={true}
                             navigation={true}
-                            pagination={false}
+                            pagination={true}
                             mousewheel={true}
                             loop={true}
                             keyboard={true}

@@ -39,21 +39,16 @@
     height: 100%;
 
     i {
-        font-size: 1.5rem;
+        font-size: 2rem;
         transition: font-size .2s ease, color .3s ease;
     }
 
-    img {
-        width: 40px;
-        display: block;
-        align-self: center;
-        transition: transform .2s ease,color .3s ease ;
-    }
+
 
     .icon-container:hover {
 
         i {
-            font-size: 1.8rem;
+            font-size: 2.2rem;
             color: $main-color;
         }
 

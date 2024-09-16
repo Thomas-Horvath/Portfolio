@@ -1,6 +1,8 @@
-import leaderShop from './img/projects_img/leadherShop.webp';
-import gipsz from './img/projects_img/gipsz.webp';
-import project from './img/projects_img/project.webp';
+
+
+
+
+// waves
 import wave from './img/wave.svg';
 import wave_reverse from './img/wave-reverse.svg';
 import wave_yellow from './img/wave-yellow.svg';
@@ -16,6 +18,7 @@ import jsIcon from './icons/skills_icon/javascript.svg';
 import sassIcon from './icons/skills_icon/sass.svg';
 import reactIcon from './icons/skills_icon/react.svg';
 import bootstrapIcon from './icons/skills_icon/bootstrap-4.svg';
+import angular from './icons/skills_icon/angular.svg';
 
 // Back-End ikonok
 import nodejsIcon from './icons/skills_icon/node-js.png';
@@ -24,8 +27,8 @@ import expressIcon from './icons/skills_icon/express.svg';
 import djangoIcon from './icons/skills_icon/django.png';
 
 // Adatbázis ikonok
-import mssqlIcon from './icons/skills_icon/microsoft-sql-server-1.svg';
-import mysqlIcon from './icons/skills_icon/mysql.svg';
+import mssqlIcon from './icons/skills_icon/sqlserver.svg';
+import mysqlIcon from './icons/skills_icon/mysql.png';
 import mongodbIcon from './icons/skills_icon/mongodb.svg';
 
 // Egyéb ikonok
@@ -42,11 +45,7 @@ export const pdf = {
     CV
 }
 
-export const projects_img = {
-    leaderShop,
-    gipsz,
-    project,
-}
+
 
 export const img = {
     wave,
@@ -77,4 +76,20 @@ export const icons = {
     figmaIcon,
     vscodeIcon,
     linuxIcon,
+    angular
 }
+
+export const categoryMap = {
+    Webpage: {
+      en: 'Website',
+      hu: 'Weboldal', 
+    },
+    Backend: {
+      en: 'Back-end',
+      hu: 'Back-end',
+    },
+    Data: {
+      en: 'Database',
+      hu: 'Adatbázis',
+    },
+  };
