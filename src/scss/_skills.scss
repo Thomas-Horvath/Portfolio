@@ -21,8 +21,9 @@
         align-items: center;
         justify-content: start;
         background: $bg-card;
-        box-shadow: 4px 4px 10px $black;
-gap: 2rem;
+        box-shadow: $box-shadow-card;
+        gap: 2rem;
+
         h2 {
             margin-bottom: 1rem;
             font-size: 2rem;

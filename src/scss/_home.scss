@@ -15,7 +15,7 @@
         line-height: 4.2rem;
         margin: 5rem 0 1rem;
         position: relative;
-        animation: animationTop 0.5s ease forwards;
+        // animation: animationTop 0.5s ease forwards;
         opacity: 0;
         animation-delay: .2s;
     }
@@ -31,7 +31,7 @@
 
         margin-bottom: 0;
         position: relative;
-        animation: animationLeft 0.5s ease forwards;
+        // animation: animationLeft 0.5s ease forwards;
         animation-delay: .2s;
         opacity: 0;
     }
@@ -44,16 +44,16 @@
         // color: #E84855;
         color: $main-red;
         position: relative;
-        animation: animationRight 0.5s ease forwards;
+        // animation: animationRight 0.5s ease forwards;
         animation-delay: .2s;
         opacity: 0;
     }
 
     &-btn {
         position: relative;
-        animation: animationLeft 0.5s ease forwards;
-        animation-delay: .2s;
-        opacity: 0;
+        // animation: animationLeft 0.5s ease forwards;
+        // animation-delay: .2s;
+        // opacity: 0;
     }
 }
 

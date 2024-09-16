@@ -401,7 +401,6 @@ section {
   line-height: 4.2rem;
   margin: 5rem 0 1rem;
   position: relative;
-  animation: animationTop 0.5s ease forwards;
   opacity: 0;
   animation-delay: 0.2s;
 }
@@ -414,7 +413,6 @@ section {
   font-size: 1.2rem;
   margin-bottom: 0;
   position: relative;
-  animation: animationLeft 0.5s ease forwards;
   animation-delay: 0.2s;
   opacity: 0;
 }
@@ -425,15 +423,11 @@ section {
   letter-spacing: 0.2rem;
   color: #db5a42;
   position: relative;
-  animation: animationRight 0.5s ease forwards;
   animation-delay: 0.2s;
   opacity: 0;
 }
 .home-btn {
   position: relative;
-  animation: animationLeft 0.5s ease forwards;
-  animation-delay: 0.2s;
-  opacity: 0;
 }
 
 .home-social-media {
@@ -552,7 +546,7 @@ section {
   position: relative;
   z-index: 2;
   border-radius: 0.25rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 10px #000;
 }
 
 .about-left img {
@@ -575,7 +569,7 @@ section {
   z-index: 0;
   top: -30px;
   left: -30px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 10px #000;
 }
 
 .about-img::before {
@@ -589,7 +583,7 @@ section {
   z-index: 0;
   bottom: -30px;
   right: -30px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 10px #000;
 }
 
 .about-right {
@@ -604,7 +598,7 @@ section {
   font-size: 1.1rem;
 }
 .about-right h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .about-right p {
   margin: 1.5rem 0;
@@ -1232,7 +1226,7 @@ section {
   background-color: rgba(68, 68, 68, 0.4666666667);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
-  margin: 1.2rem;
+  margin: 1.2rem 0;
   padding: 1rem 1.5rem;
 }
 .blogPage-wrapper .blog-article-container .blog-section h2 {
@@ -1240,6 +1234,7 @@ section {
   text-align: center;
   font-size: 2rem;
   padding: 1rem 0;
+  margin-bottom: 2rem;
 }
 .blogPage-wrapper .blog-article-container .blog-section p {
   margin-bottom: 1rem;
@@ -1427,20 +1422,19 @@ textarea.form-input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 .footer .footerInfo {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 0 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .footer .footerInfo a {
   display: inline-block;
   color: #ddd;
   font-size: 1.3rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 .footer .footerInfo a:hover {
@@ -1452,9 +1446,10 @@ textarea.form-input {
 }
 
 .copyright-container {
-  text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
 }
 
 .footer::before {
@@ -1637,6 +1632,9 @@ textarea.form-input {
   .project-btn-group .btn-secund {
     width: fit-content;
   }
+  .about-section h3 {
+    font-size: 2rem;
+  }
   .quote p {
     font-size: 1.5rem;
   }
@@ -1778,24 +1776,28 @@ textarea.form-input {
   .about-right .about-section {
     padding: 5rem 5rem 0;
   }
-  .about-left {
+  .about-right .about-right {
+    grid-area: aboutRight;
+    overflow: hidden;
+  }
+  .about-right .about-left {
     align-items: start;
   }
-  .about-img {
+  .about-right .about-img {
     width: 360px;
     height: 360px;
   }
-  .about-left img {
+  .about-right .about-left img {
     width: 340px;
     height: 340px;
   }
-  .more-info-container {
+  .about-right .more-info-container {
     padding: 4rem 3.5rem;
   }
-  .quote p:first-child {
+  .about-right .quote p:first-child {
     margin-bottom: 2rem;
   }
-  .quote-container {
+  .about-right .quote-container {
     height: 300px;
     width: 90%;
     padding: 4rem;
@@ -1811,7 +1813,7 @@ textarea.form-input {
   }
   .skill-container .skills-card {
     width: 100%;
-    min-height: 300px;
+    min-height: 330px;
   }
   .skill-container .skills-card .skills-icon-container {
     height: 100%;
@@ -1827,48 +1829,48 @@ textarea.form-input {
     font-size: 1.2rem;
     white-space: nowrap;
   }
-  .card-1 {
+  .skill-container .card-1 {
     grid-area: card1;
     width: 100%;
   }
-  .card-2 {
+  .skill-container .card-2 {
     grid-area: card2;
   }
-  .card-3 {
+  .skill-container .card-3 {
     grid-area: card3;
   }
-  .card-4 {
+  .skill-container .card-4 {
     grid-area: card4;
   }
-  .card-wrapper {
+  .skill-container .card-wrapper {
     max-width: 1400px;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 4em 2rem;
   }
-  .portfolio-content {
+  .skill-container .portfolio-content {
     padding: 2rem 0.6rem 3rem;
     gap: 2rem;
   }
-  .portfolio-popup-content-container {
+  .skill-container .portfolio-popup-content-container {
     flex-direction: row;
   }
-  .portfolio-popup-content-container .content-container {
+  .skill-container .portfolio-popup-content-container .content-container {
     width: 50%;
     justify-content: space-between;
   }
-  .portfolio-popup-content-container .content-container .portfolio-popup-content-description {
+  .skill-container .portfolio-popup-content-container .content-container .portfolio-popup-content-description {
     padding: 2rem;
   }
-  .portfolio-popup-content-container .content-container .portfolio-popup-btn-group {
+  .skill-container .portfolio-popup-content-container .content-container .portfolio-popup-btn-group {
     gap: 4rem;
     justify-content: flex-end;
   }
-  .btn-contact {
+  .skill-container .btn-contact {
     align-self: flex-start;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) and (min-width: 1200px) {
   .nav .nav-links {
     gap: 3rem;
   }

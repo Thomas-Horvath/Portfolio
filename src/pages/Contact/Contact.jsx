@@ -1,6 +1,9 @@
 import React, { useRef, useState, useEffect, useContext } from 'react';
 import emailjs from '@emailjs/browser';
 import { LanguageContext } from '../../contexts/LanguageContext';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 
 const Contact = () => {
   const { translations } = useContext(LanguageContext);
@@ -43,7 +46,7 @@ const Contact = () => {
     const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
 
-    emailjs.sendForm(serviceID, templateID, form, publicKey)    
+    emailjs.sendForm(serviceID, templateID, form, publicKey)
       .then(response => {
         console.log(response.status, response.text);
         setStatusMessage(translations.contactPageContent.successMessage);
@@ -60,12 +63,23 @@ const Contact = () => {
       });
   };
 
+  const { ref: ref1, inView: inView1 } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
   return (
     <section className="contact section-link" id="contact" data-observe>
-      <div className="main-heading">
+      <motion.div
+        className="main-heading"
+        ref={ref1}
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: inView1 ? 1 : 0.8, opacity: inView1 ? 1 : 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <h2>{translations.contactPageContent.headingTitle}</h2>
         <span>{translations.contactPageContent.subHeading}</span>
-      </div>
+      </motion.div>
       <div className="contact-container container">
         <div className="contact-content">
           <div className="contact-info-list">
@@ -74,10 +88,10 @@ const Contact = () => {
                 <div className="icon-container">
                   <i className={item.icon}></i>
                 </div>
-                  <div className="contact-group">
-                    <p className="contact-title">{item.title}</p>
-                    <p className="contact-subtitle">{item.subtitle}</p>
-                  </div>
+                <div className="contact-group">
+                  <p className="contact-title">{item.title}</p>
+                  <p className="contact-subtitle">{item.subtitle}</p>
+                </div>
               </div>
             ))}
           </div>

@@ -1,23 +1,46 @@
 import React, { useState, useContext } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import InfoBox from './InfoBox/InfoBox';
-import { img , pdf } from '../../assets/assets.js';
+import { img, pdf } from '../../assets/assets.js';
 import { LanguageContext } from '../../contexts/LanguageContext';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
     const { translations } = useContext(LanguageContext);
     const [openBoxIndex, setOpenBoxIndex] = useState(null);
 
+
     const handleBoxClick = (index) => {
         setOpenBoxIndex(openBoxIndex === index ? null : index);
     };
 
+
+
+    // Az első elem ref-je
+    const { ref: ref1, inView: inView1 } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
+    // A második elem ref-je
+    const { ref: ref2, inView: inView2 } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
     return (
         <section className="about section-link" id="about" data-observe>
-            <div className="main-heading about-main-heading">
+            <motion.div
+                className="main-heading about-main-heading hidden"
+                ref={ref1}
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: inView1 ? 1 : 0.8, opacity: inView1 ? 1 : 0 }}
+                transition={{ duration: 0.5 }}
+            >
                 <h2>{translations.about.headingTitle}</h2>
                 <span>{translations.about.headingSpan}</span>
-            </div>
+            </motion.div>
             <div className="about-container">
                 <div className="about-left">
                     <div className="about-img">
@@ -29,17 +52,23 @@ const About = () => {
                         <h3>{translations.about.mainTitle}</h3>
                         <p dangerouslySetInnerHTML={{ __html: translations.about.firstParagraph }} />
                         <p dangerouslySetInnerHTML={{ __html: translations.about.secundParagraph }} />
-                        <p dangerouslySetInnerHTML={{ __html: translations.about.thirdParagraph}} />
+                        <p dangerouslySetInnerHTML={{ __html: translations.about.thirdParagraph }} />
                         <p dangerouslySetInnerHTML={{ __html: translations.about.forthParagraph }} />
                         <p dangerouslySetInnerHTML={{ __html: translations.about.fifthParagraph }} />
-                    
+
                     </div>
                 </div>
                 <img src={img.wave_yellow_reverse} alt="fordított sárga hullám háttér"
                     className="wave-yellow-reverse" />
 
                 <div className="more-info-container">
-                    <div className="info-group-wrapper">
+                    <motion.div
+                        ref={ref2}
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: inView2 ? 1 : 0.8, opacity: inView2 ? 1 : 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="info-group-wrapper"
+                    >
                         <h2>{translations.aboutInfo.title}</h2>
                         <InfoBox
                             title={translations.aboutInfo.firstInfoTitle}
@@ -71,7 +100,7 @@ const About = () => {
                             isOpen={openBoxIndex === 4}
                             onClick={() => handleBoxClick(4)}
                         />
-                    </div>
+                    </motion.div>
                 </div>
 
                 <img src={img.wave_yellow} alt="sárga hullám háttér " className="wave-yellow" />

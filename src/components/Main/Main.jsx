@@ -9,6 +9,7 @@ import ProjectPage from '../../pages/ProjectPage/ProjectPage';
 
 
 const Main = () => {
+  
   return (
     <>
         <Home />

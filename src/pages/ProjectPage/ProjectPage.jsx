@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from 'react';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import { img, categoryMap } from '../../assets/assets.js';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 
 const ITEMS_PER_PAGE = 3;
@@ -40,9 +42,7 @@ const ProjectPage = () => {
   // categória szerinti szűrés
   useEffect(() => {
     if (activeCategory === 'All' || activeCategory === '') {
-      // Véletlenszerű sorrendezés, ha az összes projektet szeretnéd megjeleníteni
-      const shuffledProjects = [...translations.projects].sort(() => Math.random() - 0.5);
-      setFilteredProjects(shuffledProjects);
+      setFilteredProjects(translations.projects);
     } else {
       const selectedCategory = categoryMap[activeCategory][language];
       setFilteredProjects(translations.projects.filter(project => project.type === selectedCategory));
@@ -57,15 +57,26 @@ const ProjectPage = () => {
 
 
 
+  const { ref: ref1, inView: inView1 } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
 
   return (
     <section className="portfolio section-link project-page" data-observe>
       <img src={img.wave_reverse} alt="fekete fordított hullám háttér" className="wave-reverse" />
       <div className="portfolio-wrapper" id="projects">
-        <div className="main-heading">
+        <motion.div
+          className="main-heading"
+          ref={ref1}
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: inView1 ? 1 : 0.8, opacity: inView1 ? 1 : 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <h2>{translations.projectPageContent.headingTitle}</h2>
           <span>{translations.projectPageContent.subHeading}</span>
-        </div>
+        </motion.div>
         <div className="project-btn-group">
           <button
             className={`btn project-select-btn ${activeCategory === 'All' ? 'select-active' : ''}`}

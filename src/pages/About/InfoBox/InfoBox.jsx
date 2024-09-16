@@ -1,7 +1,10 @@
 import React from 'react';
 
 
+
 const InfoBox = ({ title, content, isOpen, onClick }) => {
+
+
     return (
         <div className="info-group">
             <div className="info-title" onClick={onClick}>

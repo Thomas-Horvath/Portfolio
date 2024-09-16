@@ -158,9 +158,9 @@ text-shadow: 2px 2px 4px $black;
         .blog-section {
             border: 2px solid $main-color;
             background-color: $bg-card;
-            box-shadow: $box-shadow-dirk;
+            box-shadow: $box-shadow-dark;
             border-radius: 1rem;
-            margin: 1.2rem;
+            margin: 1.2rem 0;
             padding: 1rem 1.5rem;
 
 
@@ -170,6 +170,7 @@ text-shadow: 2px 2px 4px $black;
                 text-align: center;
                 font-size: 2rem;
                 padding: 1rem 0;
+                margin-bottom: 2rem;
             }
 
             p {
