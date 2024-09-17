@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext , useRef } from 'react';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import { img, categoryMap } from '../../assets/assets.js';
@@ -24,6 +24,8 @@ const ProjectPage = () => {
   }, []);
 
 
+  const projectsRef = useRef(null);
+
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
     setCurrentPage(1);
@@ -37,6 +39,9 @@ const ProjectPage = () => {
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
+    if (projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: 'auto' });
+    }
   };
 
   // categória szerinti szűrés
@@ -66,7 +71,7 @@ const ProjectPage = () => {
   return (
     <section className="portfolio section-link project-page" >
       <img src={img.wave_reverse} alt="fekete fordított hullám háttér" className="wave-reverse" />
-      <div className="portfolio-wrapper" id="projects"data-observe>
+      <div className="portfolio-wrapper" id="projects" data-observe ref={projectsRef}>
         <motion.div
           className="main-heading"
           ref={ref1}
