@@ -42,11 +42,11 @@ const Blog = () => {
                             slidesPerView={1}
                             cssMode={true}
                             navigation={true}
-                            pagination={true}
+                            pagination={{ clickable: true }}
                             mousewheel={true}
                             loop={true}
                             keyboard={true}
-                            autoplay={{ delay: 3000 }}
+                            autoplay={{ delay: 4000 }}
                             modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
                             className="blog_slider"
                             breakpoints={{

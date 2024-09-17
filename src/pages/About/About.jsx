@@ -23,11 +23,6 @@ const About = () => {
         threshold: 0.1,
     });
 
-    // A második elem ref-je
-    const { ref: ref2, inView: inView2 } = useInView({
-        triggerOnce: false,
-        threshold: 0.1,
-    });
 
     return (
         <section className="about section-link" id="about" data-observe>
@@ -62,13 +57,7 @@ const About = () => {
                     className="wave-yellow-reverse" />
 
                 <div className="more-info-container">
-                    <motion.div
-                        ref={ref2}
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={{ scale: inView2 ? 1 : 0.8, opacity: inView2 ? 1 : 0 }}
-                        transition={{ duration: 0.5 }}
-                        className="info-group-wrapper"
-                    >
+                    <div className="info-group-wrapper">
                         <h2>{translations.aboutInfo.title}</h2>
                         <InfoBox
                             title={translations.aboutInfo.firstInfoTitle}
@@ -100,7 +89,7 @@ const About = () => {
                             isOpen={openBoxIndex === 4}
                             onClick={() => handleBoxClick(4)}
                         />
-                    </motion.div>
+                    </div>
                 </div>
 
                 <img src={img.wave_yellow} alt="sárga hullám háttér " className="wave-yellow" />

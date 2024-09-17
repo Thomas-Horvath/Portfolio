@@ -9,9 +9,9 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content-container">
                 <div className="footer-social-media">
-                    <Link className="soc-icon" to="https://www.facebook.com/ThomasHorvath86" target="_blank">
+                    <Link className="soc-icon" to="https://www.facebook.com/profile.php?id=61565723620011" target="_blank">
                         <i className="bi bi-facebook"></i></Link>
-                    <Link className="soc-icon" to="https://www.linkedin.com/in/thomas-horvath-8886b2273/" target="_blank">
+                    <Link className="soc-icon" to="https://www.linkedin.com/in/thomashorvathweb/" target="_blank">
                         <i className="bi bi-linkedin"></i></Link>
                     <Link className="soc-icon" to="https://github.com/Thomas-Horvath" target="_blank">
                         <i className="bi bi-github"></i></Link>

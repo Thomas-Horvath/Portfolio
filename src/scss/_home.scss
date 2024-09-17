@@ -15,7 +15,6 @@
         line-height: 4.2rem;
         margin: 5rem 0 1rem;
         position: relative;
-        // animation: animationTop 0.5s ease forwards;
         opacity: 0;
         animation-delay: .2s;
     }
@@ -28,10 +27,8 @@
 
     p {
         font-size: 1.2rem;
-
         margin-bottom: 0;
         position: relative;
-        // animation: animationLeft 0.5s ease forwards;
         animation-delay: .2s;
         opacity: 0;
     }
@@ -41,19 +38,14 @@
         margin-bottom: 3rem;
         font-family: $font-family-protest;
         letter-spacing: .2rem;
-        // color: #E84855;
         color: $main-red;
         position: relative;
-        // animation: animationRight 0.5s ease forwards;
         animation-delay: .2s;
         opacity: 0;
     }
 
     &-btn {
         position: relative;
-        // animation: animationLeft 0.5s ease forwards;
-        // animation-delay: .2s;
-        // opacity: 0;
     }
 }
 
@@ -89,55 +81,6 @@
     width: 100%;
     margin-top: -1px;
     overflow: hidden;
-
-
 }
 
 
-@keyframes animationTop {
-    from {
-        top: -600px;
-        opacity: 0
-    }
-
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
-
-@keyframes animationBottom {
-    from {
-        bottom: -600px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0;
-        opacity: 1
-    }
-}
-
-@keyframes animationLeft {
-    from {
-        left: -600px;
-        opacity: 0
-    }
-
-    to {
-        left: 0;
-        opacity: 1
-    }
-}
-
-@keyframes animationRight {
-    from {
-        right: -600px;
-        opacity: 0
-    }
-
-    to {
-        right: 0;
-        opacity: 1
-    }
-}

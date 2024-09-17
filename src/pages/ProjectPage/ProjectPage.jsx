@@ -64,9 +64,9 @@ const ProjectPage = () => {
 
 
   return (
-    <section className="portfolio section-link project-page" data-observe>
+    <section className="portfolio section-link project-page" >
       <img src={img.wave_reverse} alt="fekete fordított hullám háttér" className="wave-reverse" />
-      <div className="portfolio-wrapper" id="projects">
+      <div className="portfolio-wrapper" id="projects"data-observe>
         <motion.div
           className="main-heading"
           ref={ref1}

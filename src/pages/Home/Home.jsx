@@ -70,24 +70,29 @@ import { motion } from 'framer-motion';
 const Home = () => {
   const { translations } = useContext(LanguageContext);
 
+
+
+
+
+
   // Animációs konfigurációk
   const animationVariants = {
-    hidden: { opacity: 0, y: -50 },
+    hidden: { opacity: 0, y: -100 },
     visible: { opacity: 1, y: 0 },
   };
 
   const animationVariantsLeft = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0 },
   };
 
   const animationVariantsRight = {
-    hidden: { opacity: 0, x: 50 },
+    hidden: { opacity: 0, x: 100 },
     visible: { opacity: 1, x: 0 },
   };
 
   const animationVariantsBottom = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 100 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -108,7 +113,7 @@ const Home = () => {
           initial="hidden"
           animate="visible"
           variants={animationVariantsLeft}
-          transition={{ duration: 0.6}}
+          transition={{ duration: 0.6 }}
         >
           <motion.p
             initial="hidden"
@@ -133,7 +138,7 @@ const Home = () => {
           initial="hidden"
           animate="visible"
           variants={animationVariantsRight}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.6 }}
           className="home-subtitle"
         >
           {translations.home.subTitle}
@@ -143,7 +148,7 @@ const Home = () => {
           initial="hidden"
           animate="visible"
           variants={animationVariantsBottom}
-          transition={{ duration: 0.6, delay: 0.8 }}
+          transition={{ duration: 0.6 }}
 
         >
           <HashLink to="/#contact" className="btn home-btn">
@@ -154,15 +159,15 @@ const Home = () => {
         <div className="home-social-media">
           <Link
             className="soc-icon"
-            to="https://www.facebook.com/ThomasHorvath86"
+            to="https://www.facebook.com/profile.php?id=61565723620011"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="bi bi-facebook"></i>
           </Link>
           <Link
-            className="soc-icon"
-            to="https://www.linkedin.com/in/thomas-horvath-8886b2273/"
+            className="soc-icon" 
+            to="https://www.linkedin.com/in/thomashorvathweb/"
             target="_blank"
             rel="noopener noreferrer"
           >

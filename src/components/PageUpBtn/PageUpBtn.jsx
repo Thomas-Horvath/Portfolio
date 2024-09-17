@@ -5,7 +5,7 @@ const PageUpBtn = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // This option provides smooth scrolling
+     
     });
   };
 

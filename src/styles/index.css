@@ -460,46 +460,6 @@ section {
   overflow: hidden;
 }
 
-@keyframes animationTop {
-  from {
-    top: -600px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-@keyframes animationBottom {
-  from {
-    bottom: -600px;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
-}
-@keyframes animationLeft {
-  from {
-    left: -600px;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
-@keyframes animationRight {
-  from {
-    right: -600px;
-    opacity: 0;
-  }
-  to {
-    right: 0;
-    opacity: 1;
-  }
-}
 .about {
   margin-top: 2rem;
 }
@@ -1088,7 +1048,7 @@ section {
   }
 }
 .blog {
-  padding: 4rem 0 2rem;
+  padding: 3rem 0 2rem;
   background: var(--bg-dark-light);
   text-align: center;
 }
@@ -1446,6 +1406,7 @@ textarea.form-input {
 }
 
 .copyright-container {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;

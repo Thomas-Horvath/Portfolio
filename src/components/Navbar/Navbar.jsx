@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import Logo from '../../assets/img/Logo_Thomas_main_color.svg';

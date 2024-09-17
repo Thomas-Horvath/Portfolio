@@ -1,26 +1,22 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const ScrollToTop = () => {
-    const location = useLocation();
+export default function ScrollTop() {
+  const { pathname } = useLocation();
 
-    useEffect(() => {
-        // Késleltetett ugrás az oldal tetejére
-        const timer = setTimeout(() => {
-            // Ellenőrizzük, hogy van-e hash a URL-ben
-            const hasHash = location.hash;
 
-            // Ha nincs hash, akkor ugrunk az oldal tetejére
-            if (!hasHash) {
-                window.scrollTo(0, 0);
-            }
-        }, 0); // Azonnal, de késleltetve futtatjuk
+  useEffect(() => {
+    if (pathname.startsWith('/projects') || pathname.startsWith('/info/') || pathname.startsWith('/blog/')) {
 
-        // Cleanup function
-        return () => clearTimeout(timer);
-    }, [location]); // Az effectet a location változásakor futtatjuk
+      window.scrollTo(0, 0);
+    }
+  }, [pathname])
 
-    return null;
-};
+  // nem térünk vissza DOM elemmel ezért van itt null
+  return (
+    null
+  )
+}
 
-export default ScrollToTop;
+
+

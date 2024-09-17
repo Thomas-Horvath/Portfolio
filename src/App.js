@@ -12,6 +12,7 @@ import BlogPage from './pages/BlogPage/BlogPage';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
+
   return (
     <div className="App">
       <LanguageProvider>
