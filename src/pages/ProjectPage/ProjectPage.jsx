@@ -17,7 +17,7 @@ const ProjectPage = () => {
 
   useEffect(() => {
     // Betölteni a kiválasztott kategóriát a localStorage-ból
-    const savedCategory = localStorage.getItem('selectedCategory');
+    const savedCategory = sessionStorage.getItem('selectedCategory');
     if (savedCategory) {
       setActiveCategory(savedCategory);
     }
@@ -29,7 +29,7 @@ const ProjectPage = () => {
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
     setCurrentPage(1);
-    localStorage.setItem('selectedCategory', category);
+    sessionStorage.setItem('selectedCategory', category);
   };
 
 
