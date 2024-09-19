@@ -428,22 +428,24 @@
         {
             "id": 1,
             "type": "Weboldal",
-            "title": "Bőrdíszműves weboldal",
-            "cardDescription": "Minta Béla bőrdíszműves portfólió weboldala.",
+            "title": "EGS - Webshop, kliens",
+            "cardDescription": "Hangszerbolt webshop kliens oldlai front-end ",
             "popupDescription": [
-                "A projekt Minta Béla bőrdíszműves weboldalát mutatja be.",
-                "Minta Béla bőrdíszműves portfólió weboldala. Minta Béla bőrdíszműves portfólió weboldala.",
-                "Minta Béla bőrdíszműves portfólió weboldala."
+                "A projekt az EGS hangszerbolt és webshop kliens oldali front-end megvalósítása.",
+                "Az oldal megvalósítja a termékek megjelenítését, rendelések leadását valamint a kosár kezelését.",
+                "Az oldalon megvalósul a felhazsnálók regisztrációja, autentikációja és a belépett felhasználók profiljának kezelése.",
+                "Teszt felhasználó felhasználóneve: 'vásárló' , jelszava: 'Password' . " 
             ],
             "technologies": [
                 "HTML",
                 "CSS",
-                "JavaScript"
+                "JavaScript",
+                "React"
             ],
-            "imageSrc": "/project_img/1.png",
-            "imageAlt": "Bőrdíszműves projekt kép",
-            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
-            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/",
+            "imageSrc": "/project_img/egs_client.png",
+            "imageAlt": "egs webshop kliens",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS_shop_client",
+            "githubPagesLink": "https://thomas-horvath.github.io/EGS_shop_client/",
             "buttonContent": "Részletek",
             "popupDescriptionTitle": "A projekt leírása:",
             "popupTehnologies": "A felhasznált technikák:",
@@ -452,20 +454,23 @@
         {
             "id": 2,
             "type": "Weboldal",
-            "title": "Gipsz Jakab portfólió oldala",
-            "cardDescription": "Gipsz Jakab frontend webfejlesztő portfólió weboldala",
+            "title": "EGS - Admin Panel",
+            "cardDescription": "Hangszerbolt webshop admin panel",
             "popupDescription": [
-                "Gipsz Jakab frontend webfejlesztő portfólió weboldala"
+                "Hangszerbolt webshop admin panel megvalósítása",
+                "Teszt adminisztrátor felhasználóneve: 'admin', jelszava: 'Password'."
             ],
             "technologies": [
                 "HTML",
                 "CSS",
-                "JavaScript"
+                "JavaScript",
+                "Sass",
+                "React"
             ],
-            "imageSrc": "/project_img/2.png",
-            "imageAlt": "Gipsz Jakab projekt kép",
-            "githubLink": "https://github.com/Thomas-Horvath/PK_project1_porfolio_html_css-",
-            "githubPagesLink": "https://thomas-horvath.github.io/PK_project1_porfolio_html_css-/",
+            "imageSrc": "/project_img/egs_admin.png",
+            "imageAlt": "egs admin panel",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
+            "githubPagesLink": "https://thomas-horvath.github.io/EGS_Admin_Panel/",
             "buttonContent": "Részletek",
             "popupDescriptionTitle": "A projekt leírása:",
             "popupTehnologies": "A felhasznált technikák:",
@@ -474,8 +479,8 @@
         {
             "id": 3,
             "type": "Back-end",
-            "title": "Példa projekt 3",
-            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "title": "Egs - Szerver",
+            "cardDescription": "Hangszerbolt webshop szerver oldal",
             "popupDescription": [
                 "Ez a projekt kártyák megjelenítésének a mintája.3"
             ],
@@ -483,14 +488,14 @@
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "React",
-                "Sass",
-                "Bootstrap"
+                "NodeJs",
+                "MongoDb"
+              
             ],
-            "imageSrc": "/project_img/server.png",
-            "imageAlt": "Példa projekt 3 kép",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
+            "imageSrc": "/project_img/egs_server.png",
+            "imageAlt": "egs szerver",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS-backend",
+            "githubPagesLink": "https://thomasapi.eu",
             "buttonContent": "Részletek",
             "popupDescriptionTitle": "A projekt leírása:",
             "popupTehnologies": "A felhasznált technikák:",
@@ -498,8 +503,8 @@
         },
         {
             "id": 4,
-            "type": "Back-end",
-            "title": "Példa projekt 4",
+            "type": "Weboldal",
+            "title": "Bőrdíszműves oladl",
             "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
             "popupDescription": [
                 "Ez a projekt kártyák megjelenítésének a mintája. 4"
@@ -510,7 +515,7 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/server.png",
+            "imageSrc": "/project_img/1.png",
             "imageAlt": "Példa projekt 4 kép",
             "githubLink": "https://github.com/",
             "githubPagesLink": "https://github.com/",
