@@ -1,7 +1,4 @@
 
-
-
-
 // waves
 import wave from './img/wave.svg';
 import wave_reverse from './img/wave-reverse.svg';
@@ -41,55 +38,59 @@ import linuxIcon from './icons/skills_icon/linux.svg';
 //CV
 import CV from "../assets/download/CV_2023hu.pdf"
 
+
+
+
 export const pdf = {
-    CV
-}
+  CV
+}  
 
 
 
 export const img = {
-    wave,
-    wave_reverse,
-    wave_yellow,
-    wave_yellow_reverse,
-    public_pic,
-    wave_grey_reverse,
-    wave_grey,
+  wave,
+  wave_reverse,
+  wave_yellow,
+  wave_yellow_reverse,
+  public_pic,
+  wave_grey_reverse,
+  wave_grey,
 }
 
 export const icons = {
-    htmlIcon,
-    cssIcon,
-    jsIcon,
-    sassIcon,
-    reactIcon,
-    bootstrapIcon,
-    nodejsIcon,
-    pythonIcon,
-    expressIcon,
-    djangoIcon,
-    mssqlIcon,
-    mysqlIcon,
-    mongodbIcon,
-    gitIcon,
-    githubIcon,
-    figmaIcon,
-    vscodeIcon,
-    linuxIcon,
-    angular
+  htmlIcon,
+  cssIcon,
+  jsIcon,
+  sassIcon,
+  reactIcon,
+  bootstrapIcon,
+  nodejsIcon,
+  pythonIcon,
+  expressIcon,
+  djangoIcon,
+  mssqlIcon,
+  mysqlIcon,
+  mongodbIcon,
+  gitIcon,
+  githubIcon,
+  figmaIcon,
+  vscodeIcon,
+  linuxIcon,
+  angular
 }
 
 export const categoryMap = {
-    Webpage: {
-      en: 'Website',
-      hu: 'Weboldal', 
-    },
-    Backend: {
-      en: 'Back-end',
-      hu: 'Back-end',
-    },
-    Data: {
-      en: 'Database',
-      hu: 'Adatbázis',
-    },
-  };
+  Webpage: {
+    en: 'Website',
+    hu: 'Weboldal',
+  },
+  Backend: {
+    en: 'Back-end',
+    hu: 'Back-end',
+  },
+  Data: {
+    en: 'Database',
+    hu: 'Adatbázis',
+  },
+};
+

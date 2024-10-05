@@ -441,7 +441,15 @@
                 "CSS",
                 "JavaScript"
             ],
-            "imageSrc": "/project_img/egs_client.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Leather craftsman project image",
             "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
             "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/",
@@ -463,7 +471,15 @@
                 "CSS",
                 "JavaScript"
             ],
-            "imageSrc": "/project_img/egs_admin.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Gipsz Jakab project image",
             "githubLink": "https://github.com/Thomas-Horvath/PK_project1_porfolio_html_css-",
             "githubPagesLink": "https://thomas-horvath.github.io/PK_project1_porfolio_html_css-/",
@@ -490,7 +506,15 @@
                 "Sass",
                 "Bootstrap"
             ],
-            "imageSrc": "/project_img/egs_server.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Sample Project 3 image",
             "githubLink": "https://github.com/",
             "githubPagesLink": "https://github.com/",
@@ -515,7 +539,15 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/1.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Sample Project 4 image",
             "githubLink": "https://github.com/",
             "githubPagesLink": "https://github.com/",
@@ -536,7 +568,15 @@
                 "MS SQL Server",
                 "SQL"
             ],
-            "imageSrc": "/project_img/ElectricGuitarShop.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Sample Project 5 image",
             "downloadDocs_title": "Download the documentation",
             "docsHref": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
@@ -559,7 +599,15 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/3.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Sample Project 6 image",
             "githubLink": "https://github.com/",
             "githubPagesLink": "https://github.com/",
@@ -582,7 +630,15 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/server.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Sample Project 7 image",
             "githubLink": "https://github.com/",
             "githubPagesLink": "https://github.com/",
@@ -605,7 +661,15 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/3.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Sample Project 8 image",
             "githubLink": "https://github.com/",
             "githubPagesLink": "https://github.com/",
@@ -628,7 +692,15 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/mongodb_database.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Sample Project 9 image",
             "downloadDocs_title": "Download the documentation",
             "docsHref": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",

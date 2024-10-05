@@ -19,8 +19,8 @@ body {
     font-family: $font-family-poppins-regular;
     background-color: $bg-dark;
     color: $text-color-light;
-    min-width: 330px;
-    overflow-x: hidden;
+    min-width: 350px;
+  overflow-x: hidden;  
    
 }
 
@@ -58,6 +58,9 @@ img {
     background-color: $main-color;
     color: $btn-color-dark;
     border: 2px solid $main-color;
+    svg {
+        font-size: 1.5rem
+    }
 }
 
 
@@ -156,7 +159,6 @@ img {
 }
 
 section {
-    // min-height: 100vh;
     padding-top: 3rem;
 }
 

@@ -434,7 +434,7 @@
                 "A projekt az EGS hangszerbolt és webshop kliens oldali front-end megvalósítása.",
                 "Az oldal megvalósítja a termékek megjelenítését, rendelések leadását valamint a kosár kezelését.",
                 "Az oldalon megvalósul a felhazsnálók regisztrációja, autentikációja és a belépett felhasználók profiljának kezelése.",
-                "Teszt felhasználó felhasználóneve: 'vásárló' , jelszava: 'Password' . " 
+                "Teszt felhasználó felhasználóneve: 'vásárló' , jelszava: 'Password' . "
             ],
             "technologies": [
                 "HTML",
@@ -442,7 +442,15 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/egs_client.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "egs webshop kliens",
             "githubLink": "https://github.com/Thomas-Horvath/EGS_shop_client",
             "githubPagesLink": "https://thomas-horvath.github.io/EGS_shop_client/",
@@ -467,7 +475,15 @@
                 "Sass",
                 "React"
             ],
-            "imageSrc": "/project_img/egs_admin.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "egs admin panel",
             "githubLink": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
             "githubPagesLink": "https://thomas-horvath.github.io/EGS_Admin_Panel/",
@@ -490,9 +506,16 @@
                 "JavaScript",
                 "NodeJs",
                 "MongoDb"
-              
             ],
-            "imageSrc": "/project_img/egs_server.png",
+            "imageSrc": "/project_img/project_3/card.png",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "egs szerver",
             "githubLink": "https://github.com/Thomas-Horvath/EGS-backend",
             "githubPagesLink": "https://thomasapi.eu",
@@ -515,7 +538,15 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/1.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Példa projekt 4 kép",
             "githubLink": "https://github.com/",
             "githubPagesLink": "https://github.com/",
@@ -536,7 +567,15 @@
                 "MS SQL Server",
                 "SQL"
             ],
-            "imageSrc": "/project_img/ElectricGuitarShop.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Példa projekt 5 kép",
             "downloadDocs_title": "Töltsd le a dokumentációt",
             "docsHref": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
@@ -559,7 +598,15 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/3.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Példa projekt 6 kép",
             "githubLink": "https://github.com/",
             "githubPagesLink": "https://github.com/",
@@ -580,7 +627,15 @@
                 "MongodDb server",
                 "Json"
             ],
-            "imageSrc": "/project_img/server.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Példa projekt 7 kép",
             "githubLink": "https://github.com/",
             "githubPagesLink": "https://github.com/",
@@ -603,7 +658,15 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/3.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Példa projekt 8 kép",
             "githubLink": "https://github.com/",
             "githubPagesLink": "https://github.com/",
@@ -626,7 +689,15 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/mongodb_database.png",
+            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "gallery": [
+                "/project_img/project_1/1.webp",
+                "/project_img/project_1/2.webp",
+                "/project_img/project_1/3.webp",
+                "/project_img/project_1/4.webp",
+                "/project_img/project_1/5.webp",
+                "/project_img/project_1/6.webp"
+            ],
             "imageAlt": "Példa projekt 9 kép",
             "downloadDocs_title": "Töltsd le a dokumentációt",
             "docsHref": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
