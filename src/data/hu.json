@@ -428,19 +428,20 @@
         {
             "id": 1,
             "type": "Weboldal",
-            "title": "EGS - Webshop, kliens",
-            "cardDescription": "Hangszerbolt webshop kliens oldlai front-end ",
+            "title": "GitArt Próbaterem és Stúdió weboldala",
+            "cardDescription": "A Gitart Próbaterem és stúdió weboldala.",
             "popupDescription": [
-                "A projekt az EGS hangszerbolt és webshop kliens oldali front-end megvalósítása.",
-                "Az oldal megvalósítja a termékek megjelenítését, rendelések leadását valamint a kosár kezelését.",
-                "Az oldalon megvalósul a felhazsnálók regisztrációja, autentikációja és a belépett felhasználók profiljának kezelése.",
-                "Teszt felhasználó felhasználóneve: 'vásárló' , jelszava: 'Password' . "
+                "A projekt a GitArt próbaterem és stúdió weboldalát valósítja meg.",
+                "Az oldal funkciónálisan megvalósítja a ternmek online foglalását.",
+                "Az oldalon megvalósul a felhazsnálók regisztrációja, autentikációja és a belépett felhasználó teremfogalás kezelése.",
+                "Teszt felhasználó email címe: 'testuser@gmail.com' , jelszava: 'Password'  "
             ],
             "technologies": [
                 "HTML",
                 "CSS",
-                "JavaScript",
-                "React"
+                "SCSS",
+                "React",
+                "JavaScript"
             ],
             "imageSrc": "/project_img/project_1/project_1_card.webp",
             "gallery": [
@@ -451,9 +452,9 @@
                 "/project_img/project_1/5.webp",
                 "/project_img/project_1/6.webp"
             ],
-            "imageAlt": "egs webshop kliens",
-            "githubLink": "https://github.com/Thomas-Horvath/EGS_shop_client",
-            "githubPagesLink": "https://thomas-horvath.github.io/EGS_shop_client/",
+            "imageAlt": " GitArt Próbaterem és Stúdió wboldala",
+            "githubLink": "https://github.com/Thomas-Horvath/GITART-frontend",
+            "githubPagesLink": "https://thomas-horvath.github.io/GITART-frontend/",
             "buttonContent": "Részletek",
             "popupDescriptionTitle": "A projekt leírása:",
             "popupTehnologies": "A felhasznált technikák:",
@@ -462,31 +463,32 @@
         {
             "id": 2,
             "type": "Weboldal",
-            "title": "EGS - Admin Panel",
-            "cardDescription": "Hangszerbolt webshop admin panel",
+            "title": "Electric Guitar Shop E-commerce Webshop",
+            "cardDescription": "Hangszerbolt webshop kliens oldlai front-end ",
             "popupDescription": [
-                "Hangszerbolt webshop admin panel megvalósítása",
-                "Teszt adminisztrátor felhasználóneve: 'admin', jelszava: 'Password'."
+                "A projekt az EGS hangszerbolt és webshop kliens oldali front-end megvalósítása.",
+                "Az oldal megvalósítja a termékek megjelenítését, rendelések leadását valamint a kosár kezelését.",
+                "Az oldalon megvalósul a felhazsnálók regisztrációja, autentikációja és a belépett felhasználók profiljának kezelése.",
+                "Teszt felhasználó felhasználóneve: 'testuser' , jelszava: 'Password'  "
             ],
             "technologies": [
                 "HTML",
                 "CSS",
-                "JavaScript",
-                "Sass",
-                "React"
+                "React",
+                "JavaScript"
             ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "imageSrc": "/project_img/project_2/project_2_card.webp",
             "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
+                "/project_img/project_2/1.webp",
+                "/project_img/project_2/2.webp",
+                "/project_img/project_2/3.webp",
+                "/project_img/project_2/4.webp",
+                "/project_img/project_2/5.webp",
+                "/project_img/project_2/6.webp"
             ],
-            "imageAlt": "egs admin panel",
-            "githubLink": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
-            "githubPagesLink": "https://thomas-horvath.github.io/EGS_Admin_Panel/",
+            "imageAlt": "Egs webshop kliens frontend ",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS_shop_client",
+            "githubPagesLink": "https://thomas-horvath.github.io/EGS_shop_client/",
             "buttonContent": "Részletek",
             "popupDescriptionTitle": "A projekt leírása:",
             "popupTehnologies": "A felhasznált technikák:",
@@ -495,30 +497,30 @@
         {
             "id": 3,
             "type": "Back-end",
-            "title": "Egs - Szerver",
+            "title": "Electric Guitar Shop - Webshop szerver",
             "cardDescription": "Hangszerbolt webshop szerver oldal",
             "popupDescription": [
-                "Ez a projekt kártyák megjelenítésének a mintája.3"
+                "Az EGS hangszerbolt kliens és admin felületéhez tartozó szerver oldali megvalósítás.",
+                "Az oldal egy NodeJs Express szerverrel kezeli a bejövő kéréseket.",
+                "Az adatbázis egy MongoDb szerveren fut."
             ],
             "technologies": [
                 "HTML",
                 "CSS",
                 "JavaScript",
                 "NodeJs",
+                "Express",
                 "MongoDb"
             ],
-            "imageSrc": "/project_img/project_3/card.png",
+            "imageSrc": "/project_img/project_3/project_3_card.webp",
             "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
+                "/project_img/project_3/1.webp",
+                "/project_img/project_3/2.webp",
+                "/project_img/project_3/3.webp"
             ],
-            "imageAlt": "egs szerver",
+            "imageAlt": "Electric Guitar Shop - Webshop szerver",
             "githubLink": "https://github.com/Thomas-Horvath/EGS-backend",
-            "githubPagesLink": "https://thomasapi.eu",
+            "githubPagesLink": "https://egs.thomasapi.eu",
             "buttonContent": "Részletek",
             "popupDescriptionTitle": "A projekt leírása:",
             "popupTehnologies": "A felhasznált technikák:",
@@ -527,29 +529,36 @@
         {
             "id": 4,
             "type": "Weboldal",
-            "title": "Bőrdíszműves oladl",
-            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "title": "Electric Guitar Shop Webshop - Admin felület",
+            "cardDescription": "Hangszerbolt webshop admin felülete",
             "popupDescription": [
-                "Ez a projekt kártyák megjelenítésének a mintája. 4"
+                "Az Electric Guitar Shop - Webshop adminisztrációs felülete, ahol az admin jogokkal rendelkező felhasználók belépés után kezelheteik a hangszerbolt adatait.",
+                "Az általános forgalmi adatok megjelenítése mellet az adminok kezelhetik a termékek részletes adatit, frissíthetik azokat valamint létrehozhatnak és törölhetnek termékeket.",
+                "Kezelhetik a vásárlók és adminok adatait valamint az új adminisztráztotokat is létrehozhatnak.",
+                "Kezelhetik a vásárlók aktívitását. Aki inaktívra van álítva nem tud belépni a webshop profiljába.",
+                "Megtekinthetik a rendeléseket valamint módiosíthatják és törölhetik is azokat.",
+                "A hírlevél felíratkozásokat is ezen a felületen tudják kezelni az adminok.",
+                "Teszt adminisztrátor felhasználóneve:  'admin', jelszava:  'Password'."
             ],
             "technologies": [
                 "HTML",
                 "CSS",
-                "JavaScript",
-                "React"
+                "SCSS - sass",
+                "React",
+                "JavaScript"
             ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "imageSrc": "/project_img/project_4/project_4_card.webp",
             "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
+                "/project_img/project_4/1.webp",
+                "/project_img/project_4/2.webp",
+                "/project_img/project_4/3.webp",
+                "/project_img/project_4/4.webp",
+                "/project_img/project_4/5.webp",
+                "/project_img/project_4/6.webp"
             ],
-            "imageAlt": "Példa projekt 4 kép",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
+            "imageAlt": "EGS webshop admin felülete",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
+            "githubPagesLink": "https://thomas-horvath.github.io/EGS_Admin_Panel/",
             "buttonContent": "Részletek",
             "popupDescriptionTitle": "A projekt leírása:",
             "popupTehnologies": "A felhasznált technikák:",
@@ -558,25 +567,24 @@
         {
             "id": 5,
             "type": "Adatbázis",
-            "title": "MS Sql webshop adatbázis",
-            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "title": "MS Sql - EGS webshop adatbázisa",
+            "cardDescription": "Ez Electric Guitar Shop - webshop MsSql szerver adatbázisa",
             "popupDescription": [
-                "Ez a projekt kártyák megjelenítésének a mintája. 4"
+                "Microsoft SQL Server 2022 adatbázis szerveren, a harmadik normál formáig tervezett relációs adatbázis.",
+                "Funkcionalitásban a felhasználók, termékek és rendelések adatainak tárolása volt a cél.",
+                "A projektben a táblákon és szótár táblákon túl, saját függvények, nézetek és triggerek is megvalósításra kerültek.",
+                " Valamint egy teljes projectdokumentáció is készült emit a lenti gombra kattintva le is lehet tölteni."
             ],
             "technologies": [
                 "MS SQL Server",
                 "SQL"
             ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "imageSrc": "/project_img/project_5/project_5_card.webp",
             "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
+                "/project_img/project_5/1.webp",
+                "/project_img/project_5/2.webp"
             ],
-            "imageAlt": "Példa projekt 5 kép",
+            "imageAlt": "Ms Sql szerver",
             "downloadDocs_title": "Töltsd le a dokumentációt",
             "docsHref": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
             "buttonContent": "Részletek",
@@ -587,10 +595,11 @@
         {
             "id": 6,
             "type": "Weboldal",
-            "title": "Példa projekt 6",
-            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "title": "Thomas Coffee Corner - kávézó weboldala",
+            "cardDescription": "Thomas Coffee Corner - kávézó weboldala",
             "popupDescription": [
-                "Ez a projekt kártyák megjelenítésének a mintája. 4"
+                "Egy fiktív kávézó frontend megvalósítása html, css és javascript segítségével.",
+                " A projektben megvalósult a temrmékek megjelenítése és szűrése valamint egy termék keresési funkció is."
             ],
             "technologies": [
                 "HTML",
@@ -598,18 +607,18 @@
                 "JavaScript",
                 "React"
             ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "imageSrc": "/project_img/project_6/project_6_card.webp",
             "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
+                "/project_img/project_6/1.webp",
+                "/project_img/project_6/2.webp",
+                "/project_img/project_6/3.webp",
+                "/project_img/project_6/4.webp",
+                "/project_img/project_6/5.webp",
+                "/project_img/project_6/6.webp"
             ],
-            "imageAlt": "Példa projekt 6 kép",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
+            "imageAlt": "Thomas Coffee Corner kávézó weboldala",
+            "githubLink": "https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite",
+            "githubPagesLink": "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/",
             "buttonContent": "Részletek",
             "popupDescriptionTitle": "A projekt leírása:",
             "popupTehnologies": "A felhasznált technikák:",
@@ -618,27 +627,29 @@
         {
             "id": 7,
             "type": "Back-end",
-            "title": "Példa projekt 4",
-            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "title": "GitArt Próbaterem és Stúdió szerver" ,
+            "cardDescription": "A Gitart Próbaterem és stúdió szerver oldali megvalósítása.",
             "popupDescription": [
-                "Ez a projekt kártyák megjelenítésének a mintája. 4"
+                "A projekt a GitArt próbaterem és stúdió weboldal szerver oldali része.",
+                "A project egy Nodejs Express szerverrel valósul meg.",
+                "A felhasználók regisztrációját, bejelentkezését és autentikócióját valamint a próbatermek online foglalásának kezelését valósítja meg.",
+                "Az adatbázis egy MongoDb szerveren fut."
             ],
             "technologies": [
-                "MongodDb server",
-                "Json"
+                "Nodejs",
+                "Express",
+                "JavaScript",
+                "MongodDb",
+                "JSON"
             ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "imageSrc": "/project_img/project_7/project_7_card.webp",
             "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
+                "/project_img/project_7/1.webp",
+                "/project_img/project_7/2.webp"
             ],
-            "imageAlt": "Példa projekt 7 kép",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
+            "imageAlt": "NodeJs Express szerver",
+            "githubLink": "https://github.com/Thomas-Horvath/GITART-server",
+            "githubPagesLink": "https://gitart.thomasapi.eu/",
             "buttonContent": "Részletek",
             "popupDescriptionTitle": "A projekt leírása:",
             "popupTehnologies": "A felhasznált technikák:",
@@ -647,29 +658,29 @@
         {
             "id": 8,
             "type": "Weboldal",
-            "title": "Példa projekt 8",
-            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "title": "Csibi Róbert Bőrdíszműves weboldala",
+            "cardDescription": "Egy bőrdíszműves portfólió weboldala",
             "popupDescription": [
-                "Ez a projekt kártyák megjelenítésének a mintája. 4"
+                "Csibi Róber bőrdíszműves weboldala. Az álltalános információk mellett képgaléria is megvalósításra került.",
+                "A képek egy modal ablakban nagyítva is megtekinthetőek."
             ],
             "technologies": [
                 "HTML",
                 "CSS",
-                "JavaScript",
-                "React"
+                "JavaScript"
             ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "imageSrc": "/project_img/project_8/project_8_card.webp",
             "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
+                "/project_img/project_8/1.webp",
+                "/project_img/project_8/2.webp",
+                "/project_img/project_8/3.webp",
+                "/project_img/project_8/4.webp",
+                "/project_img/project_8/5.webp",
+                "/project_img/project_8/6.webp"
             ],
-            "imageAlt": "Példa projekt 8 kép",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
+            "imageAlt": "Csibi Róbert Bőrdíszműves weboldala",
+            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
+            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/index.html",
             "buttonContent": "Részletek",
             "popupDescriptionTitle": "A projekt leírása:",
             "popupTehnologies": "A felhasznált technikák:",
@@ -678,25 +689,76 @@
         {
             "id": 9,
             "type": "Adatbázis",
-            "title": "MongoDb webshop adatbázis",
-            "cardDescription": "Ez a projekt kártyák megjelenítésének a mintája.",
+            "title": "MongoDb - EGS webshop adatbázisa",
+            "cardDescription": "Ez Electric Guitar Shop - webshop MongoDb szerver adatbázisa",
             "popupDescription": [
-                "Ez a projekt kártyák megjelenítésének a mintája. 4"
+                "Ebben az adatbázisban a termékek, rendelések valamint a felhasználók kezelését valósítottam meg."
+            ],
+            "technologies": [
+                "MongoDb",
+                "JSON",
+                "BSON"
+            ],
+            "imageSrc": "/project_img/project_9/project_9_card.webp",
+            "gallery": [
+                "/project_img/project_9/1.webp",
+                "/project_img/project_9/2.webp"
+               
+            ],
+            "imageAlt": "MongoDb adatbázis",
+            "downloadDocs_title": "Töltsd le a dokumentációt",
+            "docsHref": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        },
+        {
+            "id": 10,
+            "type": "Weboldal",
+            "title": "Számológép applikáció",
+            "cardDescription": "Egy számológép applikáció megvalósítása",
+            "popupDescription": [
+                "Számológép applikáció html, css és javascript megvalósítása.",
+                "A projektben egy régi és egy modern stílusú user interfacen is használható a szolgáltatás."
             ],
             "technologies": [
                 "HTML",
                 "CSS",
-                "JavaScript",
-                "React"
+                "JavaScript"
             ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "imageSrc": "/project_img/project_10/project_10_card.webp",
             "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
+                "/project_img/project_10/1.webp",
+                "/project_img/project_10/2.webp"
+            ],
+            "imageAlt": "Számológép",
+            "githubLink": "https://github.com/Thomas-Horvath/CalculatorApp",
+            "githubPagesLink": "https://thomas-horvath.github.io/CalculatorApp/",
+            "buttonContent": "Részletek",
+            "popupDescriptionTitle": "A projekt leírása:",
+            "popupTehnologies": "A felhasznált technikák:",
+            "popupProjectType": "A projekt típusa:"
+        },
+        {
+            "id": 11,
+            "type": "Adatbázis",
+            "title": "MongoDb - Gitart Próbaterem és Stúdio adatbázisa",
+            "cardDescription": "A Gitart Próbaterem és stúdió adatbázisa",
+            "popupDescription": [
+                "A projekt a GitArt próbaterem és stúdió weboldal szerver oldali adatbázisa.",
+                "Tároljuk afelhasználók adatait valamint a próbaterem foglalások adatait",
+                "Az onlán foglalási rednszer mellett az egyes próbatermek adatit és a stúdió adatait egy egy kollekcióban tároljuk."
+            ],
+            "technologies": [
+                "MongoDb",
+                "JSON",
+                "BSON"
+            ],
+            "imageSrc": "/project_img/project_11/project_11_card.webp",
+            "gallery": [
+                "/project_img/project_11/1.webp",
+                "/project_img/project_11/2.webp"
             ],
             "imageAlt": "Példa projekt 9 kép",
             "downloadDocs_title": "Töltsd le a dokumentációt",
@@ -706,5 +768,10 @@
             "popupTehnologies": "A felhasznált technikák:",
             "popupProjectType": "A projekt típusa:"
         }
+       
+          
+          
+          
+          
     ]
 }

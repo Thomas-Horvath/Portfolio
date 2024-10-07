@@ -36,7 +36,7 @@ import vscodeIcon from './icons/skills_icon/visual-studio-code.svg';
 import linuxIcon from './icons/skills_icon/linux.svg';
 
 //CV
-import CV from "../assets/download/CV_2023hu.pdf"
+import CV from "../assets/download/CV_2024.pdf"
 
 
 

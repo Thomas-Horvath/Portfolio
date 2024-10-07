@@ -428,17 +428,19 @@
         {
             "id": 1,
             "type": "Website",
-            "title": "Leather Craftsman Website",
-            "cardDescription": "Sample Béla's leather craftsman portfolio website.",
+            "title": "GitArt Rehearsal Room and Studio Website",
+            "cardDescription": "The website of GitArt Rehearsal Room and Studio.",
             "popupDescription": [
-                "Sample Béla's leather craftsman portfolio website.",
-                "Sample Béla's leather craftsman portfolio website.Sample Béla's leather craftsman portfolio website.",
-                "Sample Béla's leather craftsman portfolio website.",
-                "Sample Béla's leather craftsman portfolio website.Sample Béla's leather craftsman portfolio website."
+                "This project implements the website for the GitArt Rehearsal Room and Studio.",
+                "The site functionally implements online booking for the rooms.",
+                "It allows users to register, authenticate, and manage room bookings as logged-in users.",
+                "Test user email: 'testuser@gmail.com', password: 'Password'."
             ],
             "technologies": [
                 "HTML",
                 "CSS",
+                "SCSS",
+                "React",
                 "JavaScript"
             ],
             "imageSrc": "/project_img/project_1/project_1_card.webp",
@@ -450,263 +452,318 @@
                 "/project_img/project_1/5.webp",
                 "/project_img/project_1/6.webp"
             ],
-            "imageAlt": "Leather craftsman project image",
-            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
-            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/",
+            "imageAlt": "GitArt Practice Room and Studio Website",
+            "githubLink": "https://github.com/Thomas-Horvath/GITART-frontend",
+            "githubPagesLink": "https://thomas-horvath.github.io/GITART-frontend/",
             "buttonContent": "Details",
             "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
+            "popupTechnologies": "Technologies Used:",
             "popupProjectType": "Project Type:"
         },
         {
             "id": 2,
             "type": "Website",
-            "title": "Gipsz Jakab Portfolio Page",
-            "cardDescription": "Gipsz Jakab frontend web developer portfolio website.",
+            "title": "Electric Guitar Shop E-commerce Webshop",
+            "cardDescription": "Client-side frontend of a musical instrument store webshop.",
             "popupDescription": [
-                "Gipsz Jakab frontend web developer portfolio website."
+                "This project implements the client-side frontend for the EGS musical instrument store and webshop.",
+                "The site enables product display, order placement, and cart management.",
+                "It includes user registration, authentication, and profile management for logged-in users.",
+                "Test user username: 'testuser', password: 'Password'."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "React",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_2/project_2_card.webp",
+            "gallery": [
+                "/project_img/project_2/1.webp",
+                "/project_img/project_2/2.webp",
+                "/project_img/project_2/3.webp",
+                "/project_img/project_2/4.webp",
+                "/project_img/project_2/5.webp",
+                "/project_img/project_2/6.webp"
+            ],
+            "imageAlt": "EGS Webshop Client Frontend",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS_shop_client",
+            "githubPagesLink": "https://thomas-horvath.github.io/EGS_shop_client/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 3,
+            "type": "Back-end",
+            "title": "Electric Guitar Shop - Webshop Server",
+            "cardDescription": "Server-side of the musical instrument store webshop.",
+            "popupDescription": [
+                "The server-side implementation for the EGS musical instrument store client and admin interface.",
+                "The server handles incoming requests using a NodeJs Express server.",
+                "The database runs on a MongoDb server."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "NodeJs",
+                "Express",
+                "MongoDb"
+            ],
+            "imageSrc": "/project_img/project_3/project_3_card.webp",
+            "gallery": [
+                "/project_img/project_3/1.webp",
+                "/project_img/project_3/2.webp",
+                "/project_img/project_3/3.webp"
+            ],
+            "imageAlt": "Electric Guitar Shop - Webshop Server",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS-backend",
+            "githubPagesLink": "https://egs.thomasapi.eu",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 4,
+            "type": "Website",
+            "title": "Electric Guitar Shop Webshop - Admin Interface",
+            "cardDescription": "Admin interface of the musical instrument store webshop.",
+            "popupDescription": [
+                "The administration interface of the Electric Guitar Shop Webshop, where users with admin rights can manage the shop data after logging in.",
+                "Admins can view general sales data, manage product details, update them, create or delete products.",
+                "Admins can manage customer and admin data, as well as create new administrators.",
+                "They can monitor customer activity. Inactive users cannot log into the shop's profile.",
+                "Admins can view, modify, and delete orders.",
+                "Newsletter subscriptions are also managed via this interface.",
+                "Test administrator username: 'admin', password: 'Password'."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "SCSS - Sass",
+                "React",
+                "JavaScript"
+            ],
+            "imageSrc": "/project_img/project_4/project_4_card.webp",
+            "gallery": [
+                "/project_img/project_4/1.webp",
+                "/project_img/project_4/2.webp",
+                "/project_img/project_4/3.webp",
+                "/project_img/project_4/4.webp",
+                "/project_img/project_4/5.webp",
+                "/project_img/project_4/6.webp"
+            ],
+            "imageAlt": "EGS Webshop Admin Interface",
+            "githubLink": "https://github.com/Thomas-Horvath/EGS_Admin_Panel",
+            "githubPagesLink": "https://thomas-horvath.github.io/EGS_Admin_Panel/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 5,
+            "type": "Database",
+            "title": "MS SQL - EGS Webshop Database",
+            "cardDescription": "Microsoft SQL Server database for the Electric Guitar Shop webshop.",
+            "popupDescription": [
+                "Relational database designed up to the third normal form on a Microsoft SQL Server 2022.",
+                "The goal was to store data for users, products, and orders.",
+                "In addition to tables and dictionary tables, custom functions, views, and triggers were implemented.",
+                "A full project documentation is available and can be downloaded by clicking the button below."
+            ],
+            "technologies": [
+                "MS SQL Server",
+                "SQL"
+            ],
+            "imageSrc": "/project_img/project_5/project_5_card.webp",
+            "gallery": [
+                "/project_img/project_5/1.webp",
+                "/project_img/project_5/2.webp"
+            ],
+            "imageAlt": "MS SQL Server",
+            "downloadDocs_title": "Download Documentation",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 6,
+            "type": "Website",
+            "title": "Thomas Coffee Corner - Café Website",
+            "cardDescription": "Thomas Coffee Corner - Café Website",
+            "popupDescription": [
+                "A front-end implementation of a fictional café using HTML, CSS, and JavaScript.",
+                "The project includes product display, filtering, and a product search function."
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "React"
+            ],
+            "imageSrc": "/project_img/project_6/project_6_card.webp",
+            "gallery": [
+                "/project_img/project_6/1.webp",
+                "/project_img/project_6/2.webp",
+                "/project_img/project_6/3.webp",
+                "/project_img/project_6/4.webp",
+                "/project_img/project_6/5.webp",
+                "/project_img/project_6/6.webp"
+            ],
+            "imageAlt": "Thomas Coffee Corner Café Website",
+            "githubLink": "https://github.com/Thomas-Horvath/Thomas_Coffee_Corner_WebSite",
+            "githubPagesLink": "https://thomas-horvath.github.io/Thomas_Coffee_Corner_WebSite/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 7,
+            "type": "Back-end",
+            "title": "GitArt Rehearsal Room and Studio Server",
+            "cardDescription": "Back-end implementation of the GitArt Rehearsal Room and Studio.",
+            "popupDescription": [
+                "This project is the back-end server part of the GitArt rehearsal room and studio website.",
+                "The project is implemented using a Node.js Express server.",
+                "It handles user registration, login, authentication, and the online booking management for the rehearsal rooms.",
+                "The database runs on a MongoDB server."
+            ],
+            "technologies": [
+                "Node.js",
+                "Express",
+                "JavaScript",
+                "MongoDB",
+                "JSON"
+            ],
+            "imageSrc": "/project_img/project_7/project_7_card.webp",
+            "gallery": [
+                "/project_img/project_7/1.webp",
+                "/project_img/project_7/2.webp"
+            ],
+            "imageAlt": "Node.js Express server",
+            "githubLink": "https://github.com/Thomas-Horvath/GITART-server",
+            "githubPagesLink": "https://gitart.thomasapi.eu/",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 8,
+            "type": "Website",
+            "title": "Róbert Csibi - Leather Craftsman Portfolio",
+            "cardDescription": "A portfolio website for a leather craftsman.",
+            "popupDescription": [
+                "The portfolio website for Róbert Csibi, a leather craftsman. In addition to general information, a photo gallery has also been implemented.",
+                "The images can be viewed enlarged in a modal window."
             ],
             "technologies": [
                 "HTML",
                 "CSS",
                 "JavaScript"
             ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "imageSrc": "/project_img/project_8/project_8_card.webp",
             "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
+                "/project_img/project_8/1.webp",
+                "/project_img/project_8/2.webp",
+                "/project_img/project_8/3.webp",
+                "/project_img/project_8/4.webp",
+                "/project_img/project_8/5.webp",
+                "/project_img/project_8/6.webp"
             ],
-            "imageAlt": "Gipsz Jakab project image",
-            "githubLink": "https://github.com/Thomas-Horvath/PK_project1_porfolio_html_css-",
-            "githubPagesLink": "https://thomas-horvath.github.io/PK_project1_porfolio_html_css-/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": [
-                "Project Description:"
-            ],
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 3,
-            "type": "Back-end",
-            "title": "Sample Project 3",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": [
-                "This project is a template for displaying cards.3"
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React",
-                "Sass",
-                "Bootstrap"
-            ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
-            "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
-            ],
-            "imageAlt": "Sample Project 3 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
+            "imageAlt": "Róbert Csibi Leather Craftsman Portfolio",
+            "githubLink": "https://github.com/Thomas-Horvath/Leather_Portfolio-site",
+            "githubPagesLink": "https://thomas-horvath.github.io/Leather_Portfolio-site/index.html",
             "buttonContent": "Details",
             "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": [
-                "Technologies Used:"
-            ],
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 4,
-            "type": "Back-end",
-            "title": "Sample Project 4",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": [
-                "This project is a template for displaying cards. 4"
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
-            "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
-            ],
-            "imageAlt": "Sample Project 4 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 5,
-            "type": "Database",
-            "title": "Ms Sql webshop database",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": [
-                "This project is a template for displaying cards. 5"
-            ],
-            "technologies": [
-                "MS SQL Server",
-                "SQL"
-            ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
-            "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
-            ],
-            "imageAlt": "Sample Project 5 image",
-            "downloadDocs_title": "Download the documentation",
-            "docsHref": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 6,
-            "type": "Website",
-            "title": "Sample Project 6",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": [
-                "This project is a template for displaying cards. 6"
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
-            "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
-            ],
-            "imageAlt": "Sample Project 6 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 7,
-            "type": "Back-end",
-            "title": "Sample Project 7",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": [
-                "This project is a template for displaying cards. 7"
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
-            "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
-            ],
-            "imageAlt": "Sample Project 7 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
-            "popupProjectType": "Project Type:"
-        },
-        {
-            "id": 8,
-            "type": "Website",
-            "title": "Sample Project 8",
-            "cardDescription": "This project is a template for displaying cards.",
-            "popupDescription": [
-                "This project is a template for displaying cards. 8"
-            ],
-            "technologies": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React"
-            ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
-            "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
-            ],
-            "imageAlt": "Sample Project 8 image",
-            "githubLink": "https://github.com/",
-            "githubPagesLink": "https://github.com/",
-            "buttonContent": "Details",
-            "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
+            "popupTechnologies": "Technologies Used:",
             "popupProjectType": "Project Type:"
         },
         {
             "id": 9,
             "type": "Database",
-            "title": "MongoDb webshop database",
-            "cardDescription": "This project is a template for displaying cards.",
+            "title": "MongoDB - EGS Webshop Database",
+            "cardDescription": "The MongoDB server database for the Electric Guitar Shop (EGS) webshop.",
             "popupDescription": [
-                "This project is a template for displaying cards. 9"
+                "This database manages the products, orders, and users."
+            ],
+            "technologies": [
+                "MongoDB",
+                "JSON",
+                "BSON"
+            ],
+            "imageSrc": "/project_img/project_9/project_9_card.webp",
+            "gallery": [
+                "/project_img/project_9/1.webp",
+                "/project_img/project_9/2.webp"
+            ],
+            "imageAlt": "MongoDB database",
+            "downloadDocs_title": "Download the Documentation",
+            "docsHref": "/project_docs/ElectricGuitarShop_Database_Documentation.pdf",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 10,
+            "type": "Website",
+            "title": "Calculator Application",
+            "cardDescription": "A calculator application.",
+            "popupDescription": [
+                "A calculator application implemented using HTML, CSS, and JavaScript.",
+                "The project offers two different user interfaces: an old-fashioned and a modern design."
             ],
             "technologies": [
                 "HTML",
                 "CSS",
-                "JavaScript",
-                "React"
+                "JavaScript"
             ],
-            "imageSrc": "/project_img/project_1/project_1_card.webp",
+            "imageSrc": "/project_img/project_10/project_10_card.webp",
             "gallery": [
-                "/project_img/project_1/1.webp",
-                "/project_img/project_1/2.webp",
-                "/project_img/project_1/3.webp",
-                "/project_img/project_1/4.webp",
-                "/project_img/project_1/5.webp",
-                "/project_img/project_1/6.webp"
+                "/project_img/project_10/1.webp",
+                "/project_img/project_10/2.webp"
             ],
-            "imageAlt": "Sample Project 9 image",
-            "downloadDocs_title": "Download the documentation",
-            "docsHref": "/project_docs/ElectricGuitarShop_Adatbázis_dokumentáció.pdf",
+            "imageAlt": "Calculator",
+            "githubLink": "https://github.com/Thomas-Horvath/CalculatorApp",
+            "githubPagesLink": "https://thomas-horvath.github.io/CalculatorApp/",
             "buttonContent": "Details",
             "popupDescriptionTitle": "Project Description:",
-            "popupTehnologies": "Technologies Used:",
+            "popupTechnologies": "Technologies Used:",
+            "popupProjectType": "Project Type:"
+        },
+        {
+            "id": 11,
+            "type": "Database",
+            "title": "MongoDB - GitArt Rehearsal Room and Studio Database",
+            "cardDescription": "The database for the GitArt Rehearsal Room and Studio.",
+            "popupDescription": [
+                "This project is the back-end database for the GitArt rehearsal room and studio website.",
+                "It stores user data and rehearsal room bookings.",
+                "In addition to the online booking system, the data for individual rooms and the studio is stored in separate collections."
+            ],
+            "technologies": [
+                "MongoDB",
+                "JSON",
+                "BSON"
+            ],
+            "imageSrc": "/project_img/project_11/project_11_card.webp",
+            "gallery": [
+                "/project_img/project_11/1.webp",
+                "/project_img/project_11/2.webp"
+            ],
+            "imageAlt": "Example project 9 image",
+            "downloadDocs_title": "Download the Documentation",
+            "docsHref": "/project_docs/GitArt_Database_Documentation.pdf",
+            "buttonContent": "Details",
+            "popupDescriptionTitle": "Project Description:",
+            "popupTechnologies": "Technologies Used:",
             "popupProjectType": "Project Type:"
         }
     ]

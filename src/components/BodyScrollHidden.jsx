@@ -9,6 +9,8 @@ const useBodyStyles = (isModalOpen) => {
       scrollPosition = window.scrollY;
 
       document.body.style.position = 'fixed';
+      document.querySelector('.header').style.position = 'fixed';
+      document.querySelector('.header').style.top = '0';
 
       document.body.style.top = `-${scrollPosition}px`;
       document.body.style.left = '0';

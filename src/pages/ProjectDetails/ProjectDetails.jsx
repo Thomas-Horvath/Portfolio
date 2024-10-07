@@ -49,8 +49,10 @@ const ProjectDetail = () => {
                             {content.map((item, index) => (
                                 <p key={index}>{item}</p>
                             ))}
-                            <p><strong>{project.popupTehnologies}</strong> {project.technologies.join(', ')}</p>
-                            <p><strong>{project.popupProjectType}</strong> {project.type}</p>
+                            <p><strong>{project.popupTehnologies}</strong></p>
+                            <p>{project.technologies.join(', ')}</p>
+                            <p><strong>{project.popupProjectType}</strong></p>
+                            <p>{project.type}</p>
                         </div>
                     </div>
 
@@ -82,7 +84,7 @@ const ProjectDetail = () => {
                     <div className="gallery-containre">
                         {project.gallery.map((image, index) => (
                             <div className="img-wrapper" key={index} onClick={() => openModal(image)}>
-                                <img src={`${process.env.PUBLIC_URL}${image}`} alt={`próbaterem berendezései ${index + 1}`} />
+                                <img src={`${process.env.PUBLIC_URL}${image}`} alt={`${project.imageAlt} ${index + 1}. kép `} />
                             </div>
                         ))}
                     </div>
