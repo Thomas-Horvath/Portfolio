@@ -645,7 +645,8 @@
             "imageSrc": "/project_img/project_7/project_7_card.webp",
             "gallery": [
                 "/project_img/project_7/1.webp",
-                "/project_img/project_7/2.webp"
+                "/project_img/project_7/2.webp",
+                "/project_img/project_7/3.webp"
             ],
             "imageAlt": "NodeJs Express szerver",
             "githubLink": "https://github.com/Thomas-Horvath/GITART-server",
