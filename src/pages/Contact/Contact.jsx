@@ -3,7 +3,8 @@ import emailjs from '@emailjs/browser';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
+import { FaPhoneSquare, FaEnvelope, FaPaperPlane } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
   const { translations } = useContext(LanguageContext);
@@ -68,6 +69,13 @@ const Contact = () => {
     threshold: 0.1,
   });
 
+
+  const iconMap = {
+    FaPhoneSquare: <FaPhoneSquare />,
+    FaEnvelope: <FaEnvelope />,
+    FaLocationDot: <FaLocationDot />
+  };
+
   return (
     <section className="contact section-link" id="contact" data-observe>
       <motion.div
@@ -86,7 +94,7 @@ const Contact = () => {
             {translations.contactPageContent.contactInfoItems.map((item, index) => (
               <div className="contact-info-item" key={index}>
                 <div className="icon-container">
-                  <i className={item.icon}></i>
+                  {iconMap[item.icon]}
                 </div>
                 <div className="contact-group">
                   <p className="contact-title">{item.title}</p>
@@ -145,7 +153,7 @@ const Contact = () => {
                 <p>{statusMessage}</p>
               </div>
               <button type="submit" name="submit" className="btn btn-contact">
-                <i className="fa-solid fa-paper-plane"></i>{translations.contactPageContent.submitButtonText}
+                <FaPaperPlane />{translations.contactPageContent.submitButtonText}
               </button>
             </div>
           </form>

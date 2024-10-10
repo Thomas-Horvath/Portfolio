@@ -462,10 +462,14 @@
             grid-area: waveYellowReverse;
         }
 
-        .quote-container {
-            width: 90%;
-            padding: 4rem;
-            max-width: 1400px;
+        .quote {
+            padding: 6rem 3rem;
+
+            .quote-container {
+                width: 90%;
+                padding: 4rem;
+                max-width: 1400px;
+            }
         }
 
 

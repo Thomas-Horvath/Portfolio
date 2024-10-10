@@ -194,17 +194,17 @@
         "subHeading": "Kérdezz bátran",
         "contactInfoItems": [
             {
-                "icon": "fa-solid fa-square-phone",
+                "icon": "FaPhoneSquare",
                 "title": "Telefon",
-                "subtitle": "+36 30 123 4567"
+                "subtitle": "+36 30 854 4452"
             },
             {
-                "icon": "fa-solid fa-envelope",
+                "icon": "FaEnvelope",
                 "title": "Email",
                 "subtitle": "thomashorvathweb@gmail.hu"
             },
             {
-                "icon": "fa-solid fa-location-dot",
+                "icon": "FaLocationDot",
                 "title": "Cím",
                 "subtitle": "Pomáz - HU"
             }

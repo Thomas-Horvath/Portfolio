@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { LanguageContext } from '../../contexts/LanguageContext';
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
     const { translations } = useContext(LanguageContext);
@@ -10,11 +11,11 @@ const Footer = () => {
             <div className="footer-content-container">
                 <div className="footer-social-media">
                     <Link className="soc-icon" to="https://www.facebook.com/profile.php?id=61565723620011" target="_blank">
-                        <i className="bi bi-facebook"></i></Link>
+                        <FaFacebook /></Link>
                     <Link className="soc-icon" to="https://www.linkedin.com/in/thomashorvathweb/" target="_blank">
-                        <i className="bi bi-linkedin"></i></Link>
+                        <FaLinkedin /></Link>
                     <Link className="soc-icon" to="https://github.com/Thomas-Horvath" target="_blank">
-                        <i className="bi bi-github"></i></Link>
+                        <FaGithub /></Link>
                 </div>
                 <div className="footerInfo">
                     <Link to="/info/policy">{translations.footer.policy}</Link>

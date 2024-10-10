@@ -20,8 +20,8 @@ body {
     background-color: $bg-dark;
     color: $text-color-light;
     min-width: 350px;
-  overflow-x: hidden;  
-   
+    overflow-x: hidden;
+
 }
 
 li {
@@ -58,8 +58,16 @@ img {
     background-color: $main-color;
     color: $btn-color-dark;
     border: 2px solid $main-color;
+
     svg {
         font-size: 1.5rem
+    }
+
+    &:hover {
+        color: $main-color;
+        border: 2px solid $main-color;
+        box-shadow: none;
+
     }
 }
 
@@ -70,6 +78,11 @@ img {
     background-color: $btn-color-dark;
     color: $main-color;
     border: 2px solid $main-color;
+
+    &:hover {
+        border: 2px solid $main-color;
+        box-shadow: none;
+    }
 }
 
 .back-btn {
@@ -77,21 +90,15 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.back-btn.btn {
-    gap: .3rem;
-} 
-.btn:hover {
-    color: $main-color;
-    border: 2px solid $main-color;
-    box-shadow: none;
 
+    &.btn {
+        gap: .3rem;
+    }
 }
 
-.btn-secund:hover {
-    border: 2px solid $main-color;
-    box-shadow: none;
-}
+
+
+
 
 %btn-after-attributes {
     position: absolute;
@@ -132,15 +139,13 @@ img {
 
 
 
-.about-btn:active i,
-.btn-portfolio:active i,
-.about-btn:hover i,
-.btn-portfolio:hover i {
+.about-btn:active svg,
+.about-btn:hover svg {
     transform: translateX(8px);
 }
 
 .btn> {
-    i {
+    svg {
         font-size: 1.5rem;
         font-weight: 600;
         transition: .4s ease;

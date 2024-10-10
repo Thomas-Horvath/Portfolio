@@ -17,11 +17,13 @@
     font-size: 1.5rem;
     visibility: hidden;
     opacity: 0;
-}
-.scrollUp i {
-    transition: transform .3s ease;
 
-}
-.scrollUp:hover i {
-    transform: translateY(-3px);
+    & svg {
+        transition: transform .3s ease;
+
+    }
+
+    &:hover svg {
+        transform: translateY(-3px);
+    }
 }

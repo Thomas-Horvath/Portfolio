@@ -3,6 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import Logo from '../../assets/img/Logo_Thomas_main_color.svg';
 import useIntersectionObserver from '../../utilities/Observer';
+import { FaBars, FaXmark } from "react-icons/fa6";
 
 const Navbar = ({ isOpen, toggleMenu }) => {
   const { translations } = useContext(LanguageContext);
@@ -41,8 +42,8 @@ const Navbar = ({ isOpen, toggleMenu }) => {
       <ul className="nav-links">
         <li>
           <HashLink
-            className={`nav-link ${isActive('#home') ? 'active' : ''}`}
-            to="/#home"
+            className={`nav-link ${isActive('/#') ? 'active' : ''}`}
+            to="/#"
             onClick={toggleMenu}
           >
             {translations.nav.link1}
@@ -95,7 +96,7 @@ const Navbar = ({ isOpen, toggleMenu }) => {
         </li>
       </ul>
       <button className="hamburger-btn-close js-hamburger-close-btn" onClick={toggleMenu}>
-        <i className={`fa-solid ${isOpen ? 'fa-xmark' : 'fa-bars'}`}></i>
+        {isOpen ? <FaXmark /> : <FaBars />}
       </button>
     </nav>
   );

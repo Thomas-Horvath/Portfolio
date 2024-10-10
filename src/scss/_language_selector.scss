@@ -6,7 +6,6 @@
     .language-icon {
         height: 100%;
         width: 4rem;
-        // margin-right: .5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -19,10 +18,10 @@
             opacity: 0.5;
 
         }
-    }
-}
 
-.language-icon img.language-active {
-    transform: scale(1);
-    opacity: 1;
+        img.language-active {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
 }

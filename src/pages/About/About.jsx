@@ -5,6 +5,7 @@ import { img, pdf } from '../../assets/assets.js';
 import { LanguageContext } from '../../contexts/LanguageContext';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { FaArrowRight, FaFileArrowDown } from "react-icons/fa6";
 
 const About = () => {
     const { translations } = useContext(LanguageContext);
@@ -94,9 +95,9 @@ const About = () => {
 
                 <img src={img.wave_yellow} alt="sárga hullám háttér " className="wave-yellow" />
                 <div className="btn-group">
-                    <HashLink to="/#contact" className="btn about-btn">{translations.about.contactButton}<i className="fa-solid fa-arrow-right"></i></HashLink>
+                    <HashLink to="/#contact" className="btn about-btn">{translations.about.contactButton}<FaArrowRight /></HashLink>
                     <a download target="_blank" href={pdf.CV} className="btn-secund" rel="noreferrer">
-                        <i className="fa-solid fa-file-arrow-down"></i>{translations.about.cvButton}</a>
+                    <FaFileArrowDown />{translations.about.cvButton}</a>
                 </div>
             </div>
         </section>

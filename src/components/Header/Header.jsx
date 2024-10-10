@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Navbar from '../Navbar/Navbar';
 import LogoLight from '../../assets/img/Logo_Thomas_light.png';
+import { FaBars } from "react-icons/fa6";
 
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
@@ -53,7 +54,7 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <HashLink to="/#home" className="logo">
+        <HashLink to="/#" className="logo">
           <img
             className="nav-logo-img js-main-logo"
             src={LogoLight}
@@ -64,7 +65,7 @@ const Header = () => {
         <div className="icons">
           <LanguageSelector />
           <div className="icon-container hamburger-btn-open js-hamburger-open-btn" onClick={toggleMenu}>
-            <i className="fa-solid fa-bars"></i>
+         <FaBars />
           </div>
         </div>
       </div>

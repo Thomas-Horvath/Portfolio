@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaArrowUp } from "react-icons/fa";
 
 const PageUpBtn = () => {
   // Function to scroll to the top of the page
@@ -11,7 +12,7 @@ const PageUpBtn = () => {
 
   return (
     <button className="scrollUp" onClick={scrollToTop} title="Ugrás a lap tetejére">
-      <i className="fa-solid fa-arrow-up"></i>
+  <FaArrowUp />
     </button>
   );
 };

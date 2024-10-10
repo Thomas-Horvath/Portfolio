@@ -17,7 +17,6 @@ const Main = () => {
         <Quote />
         <Skills />
         <ProjectPage />
-        {/* <MainProjekt /> */}
         <Blog />
         <Contact />
     </>
