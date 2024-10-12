@@ -73,6 +73,21 @@ img {
 
 
 
+//* touch screen only                                                          
+@media (hover: none) and (pointer: coarse) {
+   
+    .btn:active {
+        border: 2px solid $main-color;
+        box-shadow: none;
+        background: $main-color;
+      
+    }
+}
+
+
+
+
+
 .btn-secund {
     @extend %btn-attributs;
     background-color: $btn-color-dark;
@@ -130,6 +145,8 @@ img {
     box-shadow: 0 0 11px 4px $main-color-55;
 }
 
+
+
 .btn-secund:hover::after {
     transform: scale(1);
     box-shadow: 0 0 11px 4px $main-color-55;
@@ -167,6 +184,12 @@ section {
     padding-top: 3rem;
 }
 
+
+//* touch sreen    - ne ugráljun a háttér ha ráklikkelünk  
+a,
+.icons {
+    -webkit-tap-highlight-color: transparent;
+}
 
 
 @import 'language_selector';
