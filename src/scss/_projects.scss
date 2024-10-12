@@ -28,6 +28,10 @@
     font-size: .8rem;
     padding: .3rem .7rem;
     height: 100%;
+    &.select-active {
+        background:  #242424;
+        color: $main-color;
+    }
 }
 
 
@@ -182,14 +186,13 @@
         height: fit-content;
         font-size: .8rem;
         padding: .3rem .5rem;
+        &.activeBtn {
+            background-color: $bg-light-darker;
+            color: $main-color;
+        }
     }
 }
 
-.activeBtn {
-    background-color: $bg-light-darker;
-    color: $main-color;
-
-}
 
 .project-btn-group {
     display: flex;
@@ -207,10 +210,10 @@
 
 }
 
-.select-active {
-    background-color: #2A2A30;
-    color: $main-color;
-}
+// .select-active {
+//     background-color: #2A2A30;
+//     color: $main-color;
+// }
 
 
 

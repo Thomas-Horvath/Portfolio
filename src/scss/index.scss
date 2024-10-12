@@ -75,12 +75,25 @@ img {
 
 //* touch screen only                                                          
 @media (hover: none) and (pointer: coarse) {
-   
+    .btn {
+        &:hover {
+            color: $bg-dark-light;
+            background: $main-color;
+        }
+
+        &:hover::after {
+            display: none;
+        }
+    }
+
     .btn:active {
         border: 2px solid $main-color;
         box-shadow: none;
         background: $main-color;
-      
+        color: $btn-color-dark;
+        &::after {
+            display: none;
+        }
     }
 }
 
