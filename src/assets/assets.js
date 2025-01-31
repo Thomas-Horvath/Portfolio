@@ -34,6 +34,7 @@ import githubIcon from './icons/skills_icon/github.svg';
 import figmaIcon from './icons/skills_icon/figma.svg';
 import vscodeIcon from './icons/skills_icon/visual-studio-code.svg';
 import linuxIcon from './icons/skills_icon/linux.svg';
+import docker from './icons/skills_icon/docker.svg';
 
 //CV
 import CV from "../assets/download/CV_2024.pdf"
@@ -76,7 +77,8 @@ export const icons = {
   figmaIcon,
   vscodeIcon,
   linuxIcon,
-  angular
+  angular,
+  docker
 }
 
 export const categoryMap = {

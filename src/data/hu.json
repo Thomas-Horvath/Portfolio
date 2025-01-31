@@ -129,6 +129,10 @@
             {
                 "name": "Linux",
                 "icon": "linuxIcon"
+            },
+            {
+                "name": "Docker",
+                "icon": "docker"
             }
         ]
     },
